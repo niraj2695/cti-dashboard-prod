@@ -1,0 +1,15 @@
+[Unit]
+Description=CTI dashboard weekly report
+
+[Service]
+Type=oneshot
+User=cti
+Group=cti
+WorkingDirectory=/srv/cti/app
+EnvironmentFile=/etc/cti/env
+ExecStart=/bin/sh -c '/srv/cti/app/.venv/bin/python -m pipeline.weekly_report > /srv/cti/data/reports/$(date +%%F).md'
+ExecStartPre=/bin/mkdir -p /srv/cti/data/reports
+ReadWritePaths=/srv/cti/data
+ProtectSystem=strict
+ProtectHome=yes
+NoNewPrivileges=yes

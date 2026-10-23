@@ -1,0 +1,86 @@
+[
+ {
+  "cve": "CVE-2026-31337",
+  "cvss": 8.1,
+  "cvss_severity": "high",
+  "cvss_version": "cvssMetricV31",
+  "description": "Authentication bypass in the SSL-VPN web interface allows unauthenticated remote code execution."
+ },
+ {
+  "cve": "CVE-2026-28810",
+  "cvss": 9.8,
+  "cvss_severity": "critical",
+  "cvss_version": "cvssMetricV31",
+  "description": "Elevation of privilege in the Common Log File System driver."
+ },
+ {
+  "cve": "CVE-2026-27402",
+  "cvss": 9.8,
+  "cvss_severity": "high",
+  "cvss_version": "cvssMetricV31",
+  "description": "Stack buffer overflow permitting remote code execution."
+ },
+ {
+  "cve": "CVE-2026-26215",
+  "cvss": 7.5,
+  "cvss_severity": "high",
+  "cvss_version": "cvssMetricV31",
+  "description": "Web UI privilege escalation via crafted requests."
+ },
+ {
+  "cve": "CVE-2026-25109",
+  "cvss": 8.8,
+  "cvss_severity": "high",
+  "cvss_version": "cvssMetricV31",
+  "description": "Server-side template injection leading to RCE."
+ },
+ {
+  "cve": "CVE-2026-24077",
+  "cvss": 9.8,
+  "cvss_severity": "high",
+  "cvss_version": "cvssMetricV31",
+  "description": "Command injection in GlobalProtect."
+ },
+ {
+  "cve": "CVE-2026-23930",
+  "cvss": 9.8,
+  "cvss_severity": "high",
+  "cvss_version": "cvssMetricV31",
+  "description": "Memory overread exposing session tokens."
+ },
+ {
+  "cve": "CVE-2026-22814",
+  "cvss": 9.8,
+  "cvss_severity": "high",
+  "cvss_version": "cvssMetricV31",
+  "description": "WebKit type confusion exploited in targeted attacks."
+ },
+ {
+  "cve": "CVE-2025-61921",
+  "cvss": 9.1,
+  "cvss_severity": "critical",
+  "cvss_version": "cvssMetricV31",
+  "description": "Unauthenticated access to sensitive data."
+ },
+ {
+  "cve": "CVE-2025-59287",
+  "cvss": 8.8,
+  "cvss_severity": "critical",
+  "cvss_version": "cvssMetricV31",
+  "description": "Deserialisation of untrusted data leading to RCE."
+ },
+ {
+  "cve": "CVE-2025-55182",
+  "cvss": 9.8,
+  "cvss_severity": "critical",
+  "cvss_version": "cvssMetricV31",
+  "description": "SQL injection in the web application."
+ },
+ {
+  "cve": "CVE-2025-53770",
+  "cvss": 8.8,
+  "cvss_severity": "critical",
+  "cvss_version": "cvssMetricV31",
+  "description": "Deserialisation permitting unauthenticated RCE."
+ }
+]

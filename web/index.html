@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CTI Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="dot" id="healthDot"></span>
+    <h1>CTI DASHBOARD</h1>
+    <span class="sub">Open-source threat intelligence · RMIT student project</span>
+  </div>
+  <div class="controls">
+    <input id="search" type="search" placeholder="Filter: CVE, malware, group, country, keyword">
+    <select id="sevFilter">
+      <option value="">All severities</option>
+      <option value="critical">Critical</option>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="info">Info</option>
+    </select>
+    <span class="clock" id="clock"></span>
+  </div>
+</header>
+
+<section class="tiles" id="tiles"></section>
+
+<main class="grid">
+  <article class="panel" id="p-kev" data-feed="kev">
+    <h2>Exploited vulnerabilities <small>CISA KEV · EPSS · NVD</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+
+  <article class="panel" id="p-acsc" data-feed="acsc">
+    <h2>Australian advisories <small>ACSC</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+
+  <article class="panel" id="p-ransom" data-feed="ransomwarelive">
+    <h2>Ransomware victims <small>ransomware.live · AU/NZ first</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+
+  <article class="panel" id="p-stealer" data-feed="threatfox">
+    <h2>Infostealer activity <small>ThreatFox · metadata only</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+
+  <article class="panel" id="p-ioc" data-feed="urlhaus">
+    <h2>Malware infrastructure <small>ThreatFox · URLhaus</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+
+  <article class="panel" id="p-attack" data-feed="attack">
+    <h2>Tracked groups and techniques <small>MITRE ATT&amp;CK</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+
+  <article class="panel wide" id="p-news" data-feed="news">
+    <h2>News wire <small>BleepingComputer · THN · The Record · Krebs · SecurityWeek</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+
+  <article class="panel wide" id="p-health">
+    <h2>Feed health <small>meta.json</small></h2>
+    <div class="body"></div>
+  </article>
+</main>
+
+<footer>
+  Data from the sources named on each panel, used under their published terms. This dashboard presents third-party intelligence and does not claim ownership of it.
+  No credentials, cookies or personal data from stolen datasets are collected or displayed.
+  <span id="generated"></span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

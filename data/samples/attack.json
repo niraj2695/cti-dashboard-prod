@@ -1,0 +1,90 @@
+[
+ {
+  "techniques": {
+   "T1566": {
+    "name": "Phishing",
+    "tactics": [
+     "initial-access"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1566/"
+   },
+   "T1190": {
+    "name": "Exploit Public-Facing Application",
+    "tactics": [
+     "initial-access"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1190/"
+   },
+   "T1059": {
+    "name": "Command and Scripting Interpreter",
+    "tactics": [
+     "execution"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1059/"
+   },
+   "T1486": {
+    "name": "Data Encrypted for Impact",
+    "tactics": [
+     "impact"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1486/"
+   },
+   "T1555": {
+    "name": "Credentials from Password Stores",
+    "tactics": [
+     "credential-access"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1555/"
+   },
+   "T1071": {
+    "name": "Application Layer Protocol",
+    "tactics": [
+     "command-and-control"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1071/"
+   }
+  },
+  "groups": {
+   "G0016": {
+    "name": "APT29",
+    "aliases": [
+     "Cozy Bear",
+     "Midnight Blizzard",
+     "NOBELIUM"
+    ],
+    "techniques": [
+     "T1566",
+     "T1059",
+     "T1071"
+    ],
+    "url": "https://attack.mitre.org/groups/G0016/"
+   },
+   "G1015": {
+    "name": "Scattered Spider",
+    "aliases": [
+     "Octo Tempest",
+     "UNC3944"
+    ],
+    "techniques": [
+     "T1566",
+     "T1555",
+     "T1486"
+    ],
+    "url": "https://attack.mitre.org/groups/G1015/"
+   },
+   "G0032": {
+    "name": "Lazarus Group",
+    "aliases": [
+     "HIDDEN COBRA",
+     "Diamond Sleet"
+    ],
+    "techniques": [
+     "T1190",
+     "T1059",
+     "T1071"
+    ],
+    "url": "https://attack.mitre.org/groups/G0032/"
+   }
+  }
+ }
+]

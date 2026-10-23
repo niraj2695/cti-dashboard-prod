@@ -1,0 +1,882 @@
+[
+ {
+  "id": "3400000",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn1.drop-zone.icu",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400000/",
+  "published": "2026-10-20T15:37:21Z",
+  "severity": "medium",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn1.drop-zone.icu/inv.exe",
+   "ioc_type": "url",
+   "host": "cdn1.drop-zone.icu",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400001",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl30.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400001/",
+  "published": "2026-10-21T05:29:02Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl30.example-host.top/doc.exe",
+   "ioc_type": "url",
+   "host": "dl30.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400002",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn56.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400002/",
+  "published": "2026-10-20T14:49:10Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn56.files-store.xyz/inv.exe",
+   "ioc_type": "url",
+   "host": "cdn56.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400003",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn89.example-host.top",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400003/",
+  "published": "2026-10-22T14:33:52Z",
+  "severity": "medium",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn89.example-host.top/doc.exe",
+   "ioc_type": "url",
+   "host": "cdn89.example-host.top",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400004",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn77.example-host.top",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400004/",
+  "published": "2026-10-22T17:14:38Z",
+  "severity": "medium",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn77.example-host.top/inv.exe",
+   "ioc_type": "url",
+   "host": "cdn77.example-host.top",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400005",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror9.drop-zone.icu",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400005/",
+  "published": "2026-10-21T21:37:18Z",
+  "severity": "high",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror9.drop-zone.icu/doc.exe",
+   "ioc_type": "url",
+   "host": "mirror9.drop-zone.icu",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400006",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get55.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400006/",
+  "published": "2026-10-22T12:34:51Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get55.example-host.top/inv.exe",
+   "ioc_type": "url",
+   "host": "get55.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400007",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl54.files-store.xyz",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400007/",
+  "published": "2026-10-20T11:46:56Z",
+  "severity": "medium",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl54.files-store.xyz/inv.exe",
+   "ioc_type": "url",
+   "host": "dl54.files-store.xyz",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400008",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get54.files-store.xyz",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400008/",
+  "published": "2026-10-20T17:21:40Z",
+  "severity": "medium",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get54.files-store.xyz/setup.exe",
+   "ioc_type": "url",
+   "host": "get54.files-store.xyz",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400009",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl38.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400009/",
+  "published": "2026-10-21T15:44:36Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl38.files-store.xyz/doc.exe",
+   "ioc_type": "url",
+   "host": "dl38.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400010",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn26.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400010/",
+  "published": "2026-10-22T18:02:33Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn26.files-store.xyz/inv.exe",
+   "ioc_type": "url",
+   "host": "cdn26.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400011",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn75.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400011/",
+  "published": "2026-10-23T02:23:13Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn75.example-host.top/inv.exe",
+   "ioc_type": "url",
+   "host": "cdn75.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400012",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get84.example-host.top",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400012/",
+  "published": "2026-10-21T22:50:53Z",
+  "severity": "medium",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get84.example-host.top/inv.exe",
+   "ioc_type": "url",
+   "host": "get84.example-host.top",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400013",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl61.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400013/",
+  "published": "2026-10-20T15:45:59Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl61.example-host.top/doc.exe",
+   "ioc_type": "url",
+   "host": "dl61.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400014",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get16.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400014/",
+  "published": "2026-10-21T13:25:27Z",
+  "severity": "high",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get16.example-host.top/inv.exe",
+   "ioc_type": "url",
+   "host": "get16.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400015",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl48.drop-zone.icu",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400015/",
+  "published": "2026-10-21T23:52:10Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl48.drop-zone.icu/setup.exe",
+   "ioc_type": "url",
+   "host": "dl48.drop-zone.icu",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400016",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl14.drop-zone.icu",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400016/",
+  "published": "2026-10-21T05:53:19Z",
+  "severity": "medium",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl14.drop-zone.icu/inv.exe",
+   "ioc_type": "url",
+   "host": "dl14.drop-zone.icu",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400017",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl48.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400017/",
+  "published": "2026-10-23T03:48:39Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl48.files-store.xyz/inv.exe",
+   "ioc_type": "url",
+   "host": "dl48.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400018",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get2.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400018/",
+  "published": "2026-10-21T08:03:15Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get2.files-store.xyz/setup.exe",
+   "ioc_type": "url",
+   "host": "get2.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400019",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn10.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400019/",
+  "published": "2026-10-20T23:59:02Z",
+  "severity": "high",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn10.example-host.top/doc.exe",
+   "ioc_type": "url",
+   "host": "cdn10.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400020",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl53.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400020/",
+  "published": "2026-10-21T09:02:26Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl53.example-host.top/setup.exe",
+   "ioc_type": "url",
+   "host": "dl53.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400021",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl84.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400021/",
+  "published": "2026-10-21T06:52:31Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl84.example-host.top/doc.exe",
+   "ioc_type": "url",
+   "host": "dl84.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400022",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn54.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400022/",
+  "published": "2026-10-21T03:25:48Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn54.example-host.top/doc.exe",
+   "ioc_type": "url",
+   "host": "cdn54.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400023",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror3.files-store.xyz",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400023/",
+  "published": "2026-10-22T17:15:05Z",
+  "severity": "medium",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror3.files-store.xyz/doc.exe",
+   "ioc_type": "url",
+   "host": "mirror3.files-store.xyz",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400024",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get1.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400024/",
+  "published": "2026-10-22T01:37:09Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get1.files-store.xyz/doc.exe",
+   "ioc_type": "url",
+   "host": "get1.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400025",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn59.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400025/",
+  "published": "2026-10-23T05:50:05Z",
+  "severity": "high",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn59.example-host.top/inv.exe",
+   "ioc_type": "url",
+   "host": "cdn59.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400026",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror12.drop-zone.icu",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400026/",
+  "published": "2026-10-20T14:52:47Z",
+  "severity": "medium",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror12.drop-zone.icu/setup.exe",
+   "ioc_type": "url",
+   "host": "mirror12.drop-zone.icu",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400027",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get19.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400027/",
+  "published": "2026-10-22T19:41:35Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get19.files-store.xyz/inv.exe",
+   "ioc_type": "url",
+   "host": "get19.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400028",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl50.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400028/",
+  "published": "2026-10-22T10:02:49Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl50.files-store.xyz/doc.exe",
+   "ioc_type": "url",
+   "host": "dl50.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400029",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: cdn7.drop-zone.icu",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400029/",
+  "published": "2026-10-22T04:05:37Z",
+  "severity": "medium",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://cdn7.drop-zone.icu/setup.exe",
+   "ioc_type": "url",
+   "host": "cdn7.drop-zone.icu",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400030",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get82.example-host.top",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400030/",
+  "published": "2026-10-22T02:56:56Z",
+  "severity": "medium",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get82.example-host.top/doc.exe",
+   "ioc_type": "url",
+   "host": "get82.example-host.top",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400031",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: get73.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400031/",
+  "published": "2026-10-22T03:16:33Z",
+  "severity": "high",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://get73.example-host.top/inv.exe",
+   "ioc_type": "url",
+   "host": "get73.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400032",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror46.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400032/",
+  "published": "2026-10-22T13:48:41Z",
+  "severity": "high",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror46.example-host.top/inv.exe",
+   "ioc_type": "url",
+   "host": "mirror46.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400033",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl72.drop-zone.icu",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400033/",
+  "published": "2026-10-21T08:46:25Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl72.drop-zone.icu/inv.exe",
+   "ioc_type": "url",
+   "host": "dl72.drop-zone.icu",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400034",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror77.files-store.xyz",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400034/",
+  "published": "2026-10-20T20:16:36Z",
+  "severity": "medium",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror77.files-store.xyz/setup.exe",
+   "ioc_type": "url",
+   "host": "mirror77.files-store.xyz",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400035",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror40.drop-zone.icu",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400035/",
+  "published": "2026-10-22T01:28:56Z",
+  "severity": "high",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror40.drop-zone.icu/doc.exe",
+   "ioc_type": "url",
+   "host": "mirror40.drop-zone.icu",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400036",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror65.files-store.xyz",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400036/",
+  "published": "2026-10-23T05:14:44Z",
+  "severity": "high",
+  "tags": [
+   "Amadey",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror65.files-store.xyz/doc.exe",
+   "ioc_type": "url",
+   "host": "mirror65.files-store.xyz",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400037",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror31.files-store.xyz",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400037/",
+  "published": "2026-10-21T01:02:24Z",
+  "severity": "medium",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror31.files-store.xyz/inv.exe",
+   "ioc_type": "url",
+   "host": "mirror31.files-store.xyz",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400038",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: mirror52.example-host.top",
+  "summary": "malware_download exe status online",
+  "url": "https://urlhaus.abuse.ch/url/3400038/",
+  "published": "2026-10-22T21:59:42Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://mirror52.example-host.top/doc.exe",
+   "ioc_type": "url",
+   "host": "mirror52.example-host.top",
+   "status": "online",
+   "threat": "malware_download"
+  }
+ },
+ {
+  "id": "3400039",
+  "type": "indicator",
+  "feed": "urlhaus",
+  "title": "URL: dl57.drop-zone.icu",
+  "summary": "malware_download exe status offline",
+  "url": "https://urlhaus.abuse.ch/url/3400039/",
+  "published": "2026-10-21T09:31:07Z",
+  "severity": "medium",
+  "tags": [
+   "Lumma Stealer",
+   "exe",
+   "malware_download"
+  ],
+  "extra": {
+   "ioc": "https://dl57.drop-zone.icu/setup.exe",
+   "ioc_type": "url",
+   "host": "dl57.drop-zone.icu",
+   "status": "offline",
+   "threat": "malware_download"
+  }
+ }
+]

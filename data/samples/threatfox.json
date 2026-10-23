@@ -1,0 +1,1475 @@
+[
+ {
+  "id": "1300000",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: login-606.shop",
+  "summary": "StealC (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300000/",
+  "published": "2026-10-22T12:31:37Z",
+  "severity": "medium",
+  "tags": [
+   "StealC",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "login-606.shop",
+   "ioc_type": "domain",
+   "malware": "StealC",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300001",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: secure-140.top",
+  "summary": "Remcos (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300001/",
+  "published": "2026-10-19T08:33:23Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "secure-140.top",
+   "ioc_type": "domain",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300002",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: da4b9237bacccdf1da4b9237bacccdf1da4b9237bacccdf1da4b9237bacccdf1",
+  "summary": "XWorm (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300002/",
+  "published": "2026-10-17T09:52:31Z",
+  "severity": "high",
+  "tags": [
+   "XWorm",
+   "botnet_cc",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "da4b9237bacccdf1da4b9237bacccdf1da4b9237bacccdf1da4b9237bacccdf1",
+   "ioc_type": "sha256_hash",
+   "malware": "XWorm",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300003",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 123.181.86.157:443",
+  "summary": "AsyncRAT (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300003/",
+  "published": "2026-10-20T15:53:37Z",
+  "severity": "high",
+  "tags": [
+   "AsyncRAT",
+   "botnet_cc",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "123.181.86.157:443",
+   "ioc_type": "ip:port",
+   "malware": "AsyncRAT",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300004",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 47.229.205.141:4444",
+  "summary": "QakBot (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300004/",
+  "published": "2026-10-16T18:01:01Z",
+  "severity": "high",
+  "tags": [
+   "QakBot",
+   "botnet_cc",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "47.229.205.141:4444",
+   "ioc_type": "ip:port",
+   "malware": "QakBot",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300005",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: cdn-112.icu",
+  "summary": "Remcos (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300005/",
+  "published": "2026-10-23T06:42:19Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "cdn-112.icu",
+   "ioc_type": "domain",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300006",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-60.xyz/update.exe",
+  "summary": "Remcos (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300006/",
+  "published": "2026-10-20T02:33:20Z",
+  "severity": "medium",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-60.xyz/update.exe",
+   "ioc_type": "url",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300007",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 53.34.106.113:8080",
+  "summary": "Remcos (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300007/",
+  "published": "2026-10-19T17:46:04Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "53.34.106.113:8080",
+   "ioc_type": "ip:port",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300008",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 23.106.192.39:4444",
+  "summary": "AsyncRAT (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300008/",
+  "published": "2026-10-16T16:57:30Z",
+  "severity": "high",
+  "tags": [
+   "AsyncRAT",
+   "botnet_cc",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "23.106.192.39:4444",
+   "ioc_type": "ip:port",
+   "malware": "AsyncRAT",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300009",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 0ade7c2cf97f75d00ade7c2cf97f75d00ade7c2cf97f75d00ade7c2cf97f75d0",
+  "summary": "QakBot (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300009/",
+  "published": "2026-10-21T22:37:36Z",
+  "severity": "medium",
+  "tags": [
+   "QakBot",
+   "botnet_cc",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "0ade7c2cf97f75d00ade7c2cf97f75d00ade7c2cf97f75d00ade7c2cf97f75d0",
+   "ioc_type": "sha256_hash",
+   "malware": "QakBot",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300010",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-31.xyz/setup.exe",
+  "summary": "Rhadamanthys (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300010/",
+  "published": "2026-10-19T01:50:45Z",
+  "severity": "high",
+  "tags": [
+   "Rhadamanthys",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-31.xyz/setup.exe",
+   "ioc_type": "url",
+   "malware": "Rhadamanthys",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300011",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: cdn-630.icu",
+  "summary": "XWorm (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300011/",
+  "published": "2026-10-20T04:02:10Z",
+  "severity": "high",
+  "tags": [
+   "XWorm",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "cdn-630.icu",
+   "ioc_type": "domain",
+   "malware": "XWorm",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300012",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-35.xyz/setup.exe",
+  "summary": "StealC (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300012/",
+  "published": "2026-10-19T03:49:11Z",
+  "severity": "high",
+  "tags": [
+   "StealC",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-35.xyz/setup.exe",
+   "ioc_type": "url",
+   "malware": "StealC",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300013",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 127.176.43.214:443",
+  "summary": "XWorm (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300013/",
+  "published": "2026-10-22T17:31:18Z",
+  "severity": "high",
+  "tags": [
+   "XWorm",
+   "botnet_cc",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "127.176.43.214:443",
+   "ioc_type": "ip:port",
+   "malware": "XWorm",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300014",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: fa35e192121eabf3fa35e192121eabf3fa35e192121eabf3fa35e192121eabf3",
+  "summary": "Remcos (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300014/",
+  "published": "2026-10-18T22:31:27Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "fa35e192121eabf3fa35e192121eabf3fa35e192121eabf3fa35e192121eabf3",
+   "ioc_type": "sha256_hash",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300015",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: login-867.xyz",
+  "summary": "AsyncRAT (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300015/",
+  "published": "2026-10-21T15:11:26Z",
+  "severity": "medium",
+  "tags": [
+   "AsyncRAT",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "login-867.xyz",
+   "ioc_type": "domain",
+   "malware": "AsyncRAT",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300016",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: cdn-162.shop",
+  "summary": "Cobalt Strike (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300016/",
+  "published": "2026-10-19T18:31:56Z",
+  "severity": "high",
+  "tags": [
+   "Cobalt Strike",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "cdn-162.shop",
+   "ioc_type": "domain",
+   "malware": "Cobalt Strike",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300017",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 117.93.2.199:8080",
+  "summary": "Rhadamanthys (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300017/",
+  "published": "2026-10-21T03:21:51Z",
+  "severity": "medium",
+  "tags": [
+   "Rhadamanthys",
+   "botnet_cc",
+   "infostealer",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "117.93.2.199:8080",
+   "ioc_type": "ip:port",
+   "malware": "Rhadamanthys",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300018",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 9e6a55b6b4563e659e6a55b6b4563e659e6a55b6b4563e659e6a55b6b4563e65",
+  "summary": "Rhadamanthys (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300018/",
+  "published": "2026-10-18T06:08:22Z",
+  "severity": "medium",
+  "tags": [
+   "Rhadamanthys",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "9e6a55b6b4563e659e6a55b6b4563e659e6a55b6b4563e659e6a55b6b4563e65",
+   "ioc_type": "sha256_hash",
+   "malware": "Rhadamanthys",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300019",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: b3f0c7f6bb763af1b3f0c7f6bb763af1b3f0c7f6bb763af1b3f0c7f6bb763af1",
+  "summary": "RedLine Stealer (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300019/",
+  "published": "2026-10-20T12:54:17Z",
+  "severity": "high",
+  "tags": [
+   "RedLine Stealer",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "b3f0c7f6bb763af1b3f0c7f6bb763af1b3f0c7f6bb763af1b3f0c7f6bb763af1",
+   "ioc_type": "sha256_hash",
+   "malware": "RedLine Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300020",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 91032ad7bbcb6cf791032ad7bbcb6cf791032ad7bbcb6cf791032ad7bbcb6cf7",
+  "summary": "Remcos (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300020/",
+  "published": "2026-10-22T08:33:11Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "91032ad7bbcb6cf791032ad7bbcb6cf791032ad7bbcb6cf791032ad7bbcb6cf7",
+   "ioc_type": "sha256_hash",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300021",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 472b07b9fcf2c245472b07b9fcf2c245472b07b9fcf2c245472b07b9fcf2c245",
+  "summary": "Vidar (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300021/",
+  "published": "2026-10-21T01:16:09Z",
+  "severity": "high",
+  "tags": [
+   "Vidar",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "472b07b9fcf2c245472b07b9fcf2c245472b07b9fcf2c245472b07b9fcf2c245",
+   "ioc_type": "sha256_hash",
+   "malware": "Vidar",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300022",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-12.xyz/update.exe",
+  "summary": "StealC (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300022/",
+  "published": "2026-10-19T21:39:09Z",
+  "severity": "high",
+  "tags": [
+   "StealC",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-12.xyz/update.exe",
+   "ioc_type": "url",
+   "malware": "StealC",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300023",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 206.117.53.22:4444",
+  "summary": "RedLine Stealer (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300023/",
+  "published": "2026-10-20T14:36:35Z",
+  "severity": "high",
+  "tags": [
+   "RedLine Stealer",
+   "botnet_cc",
+   "infostealer",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "206.117.53.22:4444",
+   "ioc_type": "ip:port",
+   "malware": "RedLine Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300024",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 4d134bc072212ace4d134bc072212ace4d134bc072212ace4d134bc072212ace",
+  "summary": "Rhadamanthys (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300024/",
+  "published": "2026-10-17T23:29:55Z",
+  "severity": "medium",
+  "tags": [
+   "Rhadamanthys",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "4d134bc072212ace4d134bc072212ace4d134bc072212ace4d134bc072212ace",
+   "ioc_type": "sha256_hash",
+   "malware": "Rhadamanthys",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300025",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: api-666.icu",
+  "summary": "RedLine Stealer (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300025/",
+  "published": "2026-10-17T01:43:38Z",
+  "severity": "high",
+  "tags": [
+   "RedLine Stealer",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "api-666.icu",
+   "ioc_type": "domain",
+   "malware": "RedLine Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300026",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-47.xyz/invoice.exe",
+  "summary": "Vidar (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300026/",
+  "published": "2026-10-21T12:12:36Z",
+  "severity": "high",
+  "tags": [
+   "Vidar",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-47.xyz/invoice.exe",
+   "ioc_type": "url",
+   "malware": "Vidar",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300027",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-67.top/invoice.exe",
+  "summary": "Lumma Stealer (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300027/",
+  "published": "2026-10-18T22:38:42Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-67.top/invoice.exe",
+   "ioc_type": "url",
+   "malware": "Lumma Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300028",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 0a57cb53ba59c46f0a57cb53ba59c46f0a57cb53ba59c46f0a57cb53ba59c46f",
+  "summary": "Rhadamanthys (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300028/",
+  "published": "2026-10-23T05:05:05Z",
+  "severity": "high",
+  "tags": [
+   "Rhadamanthys",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "0a57cb53ba59c46f0a57cb53ba59c46f0a57cb53ba59c46f0a57cb53ba59c46f",
+   "ioc_type": "sha256_hash",
+   "malware": "Rhadamanthys",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300029",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 7719a1c782a1ba917719a1c782a1ba917719a1c782a1ba917719a1c782a1ba91",
+  "summary": "Cobalt Strike (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300029/",
+  "published": "2026-10-23T00:08:35Z",
+  "severity": "high",
+  "tags": [
+   "Cobalt Strike",
+   "botnet_cc",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "7719a1c782a1ba917719a1c782a1ba917719a1c782a1ba917719a1c782a1ba91",
+   "ioc_type": "sha256_hash",
+   "malware": "Cobalt Strike",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300030",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: api-660.shop",
+  "summary": "Vidar (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300030/",
+  "published": "2026-10-20T22:28:59Z",
+  "severity": "high",
+  "tags": [
+   "Vidar",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "api-660.shop",
+   "ioc_type": "domain",
+   "malware": "Vidar",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300031",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-21.xyz/setup.exe",
+  "summary": "Lumma Stealer (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300031/",
+  "published": "2026-10-20T15:38:11Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-21.xyz/setup.exe",
+   "ioc_type": "url",
+   "malware": "Lumma Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300032",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: cb4e5208b4cd8726cb4e5208b4cd8726cb4e5208b4cd8726cb4e5208b4cd8726",
+  "summary": "Lumma Stealer (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300032/",
+  "published": "2026-10-22T07:31:08Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "cb4e5208b4cd8726cb4e5208b4cd8726cb4e5208b4cd8726cb4e5208b4cd8726",
+   "ioc_type": "sha256_hash",
+   "malware": "Lumma Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300033",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: login-917.xyz",
+  "summary": "XWorm (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300033/",
+  "published": "2026-10-19T01:44:16Z",
+  "severity": "high",
+  "tags": [
+   "XWorm",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "login-917.xyz",
+   "ioc_type": "domain",
+   "malware": "XWorm",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300034",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: f1f836cb4ea6efb2f1f836cb4ea6efb2f1f836cb4ea6efb2f1f836cb4ea6efb2",
+  "summary": "RedLine Stealer (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300034/",
+  "published": "2026-10-18T00:07:32Z",
+  "severity": "high",
+  "tags": [
+   "RedLine Stealer",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "f1f836cb4ea6efb2f1f836cb4ea6efb2f1f836cb4ea6efb2f1f836cb4ea6efb2",
+   "ioc_type": "sha256_hash",
+   "malware": "RedLine Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300035",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 173.33.242.65:443",
+  "summary": "Rhadamanthys (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300035/",
+  "published": "2026-10-22T19:07:06Z",
+  "severity": "high",
+  "tags": [
+   "Rhadamanthys",
+   "botnet_cc",
+   "infostealer",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "173.33.242.65:443",
+   "ioc_type": "ip:port",
+   "malware": "Rhadamanthys",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300036",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 162.101.39.154:8080",
+  "summary": "Cobalt Strike (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300036/",
+  "published": "2026-10-22T21:40:58Z",
+  "severity": "high",
+  "tags": [
+   "Cobalt Strike",
+   "botnet_cc",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "162.101.39.154:8080",
+   "ioc_type": "ip:port",
+   "malware": "Cobalt Strike",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300037",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 182.111.250.75:4444",
+  "summary": "Cobalt Strike (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300037/",
+  "published": "2026-10-17T02:01:33Z",
+  "severity": "medium",
+  "tags": [
+   "Cobalt Strike",
+   "botnet_cc",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "182.111.250.75:4444",
+   "ioc_type": "ip:port",
+   "malware": "Cobalt Strike",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300038",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-84.top/setup.exe",
+  "summary": "Lumma Stealer (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300038/",
+  "published": "2026-10-16T23:23:46Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-84.top/setup.exe",
+   "ioc_type": "url",
+   "malware": "Lumma Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300039",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-10.xyz/invoice.exe",
+  "summary": "Vidar (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300039/",
+  "published": "2026-10-20T14:41:38Z",
+  "severity": "high",
+  "tags": [
+   "Vidar",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-10.xyz/invoice.exe",
+   "ioc_type": "url",
+   "malware": "Vidar",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300040",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: af3e133428b9e25caf3e133428b9e25caf3e133428b9e25caf3e133428b9e25c",
+  "summary": "Vidar (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300040/",
+  "published": "2026-10-17T07:33:30Z",
+  "severity": "medium",
+  "tags": [
+   "Vidar",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "af3e133428b9e25caf3e133428b9e25caf3e133428b9e25caf3e133428b9e25c",
+   "ioc_type": "sha256_hash",
+   "malware": "Vidar",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300041",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-16.xyz/setup.exe",
+  "summary": "Cobalt Strike (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300041/",
+  "published": "2026-10-17T18:13:39Z",
+  "severity": "medium",
+  "tags": [
+   "Cobalt Strike",
+   "botnet_cc",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-16.xyz/setup.exe",
+   "ioc_type": "url",
+   "malware": "Cobalt Strike",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300042",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: cdn-891.shop",
+  "summary": "Cobalt Strike (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300042/",
+  "published": "2026-10-17T05:40:02Z",
+  "severity": "high",
+  "tags": [
+   "Cobalt Strike",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "cdn-891.shop",
+   "ioc_type": "domain",
+   "malware": "Cobalt Strike",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300043",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: secure-729.xyz",
+  "summary": "Rhadamanthys (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300043/",
+  "published": "2026-10-17T05:54:34Z",
+  "severity": "medium",
+  "tags": [
+   "Rhadamanthys",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "secure-729.xyz",
+   "ioc_type": "domain",
+   "malware": "Rhadamanthys",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300044",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: api-361.shop",
+  "summary": "Rhadamanthys (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300044/",
+  "published": "2026-10-19T14:27:56Z",
+  "severity": "high",
+  "tags": [
+   "Rhadamanthys",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "api-361.shop",
+   "ioc_type": "domain",
+   "malware": "Rhadamanthys",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300045",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 47.82.38.54:2404",
+  "summary": "Remcos (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300045/",
+  "published": "2026-10-19T15:59:12Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "47.82.38.54:2404",
+   "ioc_type": "ip:port",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300046",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 49.175.46.82:8080",
+  "summary": "StealC (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300046/",
+  "published": "2026-10-18T08:23:48Z",
+  "severity": "high",
+  "tags": [
+   "StealC",
+   "botnet_cc",
+   "infostealer",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "49.175.46.82:8080",
+   "ioc_type": "ip:port",
+   "malware": "StealC",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300047",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 827bfc458708f0b4827bfc458708f0b4827bfc458708f0b4827bfc458708f0b4",
+  "summary": "StealC (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300047/",
+  "published": "2026-10-17T08:19:13Z",
+  "severity": "high",
+  "tags": [
+   "StealC",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "827bfc458708f0b4827bfc458708f0b4827bfc458708f0b4827bfc458708f0b4",
+   "ioc_type": "sha256_hash",
+   "malware": "StealC",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300048",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 64e095fe763fc62464e095fe763fc62464e095fe763fc62464e095fe763fc624",
+  "summary": "Remcos (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300048/",
+  "published": "2026-10-23T07:19:47Z",
+  "severity": "high",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "64e095fe763fc62464e095fe763fc62464e095fe763fc62464e095fe763fc624",
+   "ioc_type": "sha256_hash",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300049",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: 2e01e17467891f7c2e01e17467891f7c2e01e17467891f7c2e01e17467891f7c",
+  "summary": "Remcos (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300049/",
+  "published": "2026-10-23T07:08:26Z",
+  "severity": "medium",
+  "tags": [
+   "Remcos",
+   "botnet_cc",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "2e01e17467891f7c2e01e17467891f7c2e01e17467891f7c2e01e17467891f7c",
+   "ioc_type": "sha256_hash",
+   "malware": "Remcos",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300050",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: api-640.icu",
+  "summary": "Vidar (botnet C2) confidence 50%",
+  "url": "https://threatfox.abuse.ch/ioc/1300050/",
+  "published": "2026-10-21T07:27:09Z",
+  "severity": "medium",
+  "tags": [
+   "Vidar",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "api-640.icu",
+   "ioc_type": "domain",
+   "malware": "Vidar",
+   "threat_type": "botnet_cc",
+   "confidence": 50,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300051",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: update-650.shop",
+  "summary": "XWorm (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300051/",
+  "published": "2026-10-20T03:32:50Z",
+  "severity": "high",
+  "tags": [
+   "XWorm",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "update-650.shop",
+   "ioc_type": "domain",
+   "malware": "XWorm",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300052",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: cdn-610.icu",
+  "summary": "StealC (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300052/",
+  "published": "2026-10-17T03:47:43Z",
+  "severity": "high",
+  "tags": [
+   "StealC",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "cdn-610.icu",
+   "ioc_type": "domain",
+   "malware": "StealC",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300053",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "sha256_hash: c5b76da3e608d34ec5b76da3e608d34ec5b76da3e608d34ec5b76da3e608d34e",
+  "summary": "StealC (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300053/",
+  "published": "2026-10-16T20:39:57Z",
+  "severity": "high",
+  "tags": [
+   "StealC",
+   "botnet_cc",
+   "infostealer",
+   "sha256_hash"
+  ],
+  "extra": {
+   "ioc": "c5b76da3e608d34ec5b76da3e608d34ec5b76da3e608d34ec5b76da3e608d34e",
+   "ioc_type": "sha256_hash",
+   "malware": "StealC",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300054",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: update-738.icu",
+  "summary": "Cobalt Strike (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300054/",
+  "published": "2026-10-20T12:50:32Z",
+  "severity": "high",
+  "tags": [
+   "Cobalt Strike",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "update-738.icu",
+   "ioc_type": "domain",
+   "malware": "Cobalt Strike",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300055",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: secure-153.top",
+  "summary": "Lumma Stealer (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300055/",
+  "published": "2026-10-18T10:29:20Z",
+  "severity": "high",
+  "tags": [
+   "Lumma Stealer",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "secure-153.top",
+   "ioc_type": "domain",
+   "malware": "Lumma Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300056",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: update-419.icu",
+  "summary": "RedLine Stealer (botnet C2) confidence 75%",
+  "url": "https://threatfox.abuse.ch/ioc/1300056/",
+  "published": "2026-10-22T13:58:46Z",
+  "severity": "high",
+  "tags": [
+   "RedLine Stealer",
+   "botnet_cc",
+   "domain",
+   "infostealer"
+  ],
+  "extra": {
+   "ioc": "update-419.icu",
+   "ioc_type": "domain",
+   "malware": "RedLine Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 75,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300057",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "url: https://files-58.xyz/update.exe",
+  "summary": "RedLine Stealer (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300057/",
+  "published": "2026-10-22T17:21:38Z",
+  "severity": "high",
+  "tags": [
+   "RedLine Stealer",
+   "botnet_cc",
+   "infostealer",
+   "url"
+  ],
+  "extra": {
+   "ioc": "https://files-58.xyz/update.exe",
+   "ioc_type": "url",
+   "malware": "RedLine Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300058",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "domain: secure-131.icu",
+  "summary": "QakBot (botnet C2) confidence 100%",
+  "url": "https://threatfox.abuse.ch/ioc/1300058/",
+  "published": "2026-10-23T01:47:57Z",
+  "severity": "high",
+  "tags": [
+   "QakBot",
+   "botnet_cc",
+   "domain"
+  ],
+  "extra": {
+   "ioc": "secure-131.icu",
+   "ioc_type": "domain",
+   "malware": "QakBot",
+   "threat_type": "botnet_cc",
+   "confidence": 100,
+   "infostealer": false,
+   "reporter": "abuse_ch"
+  }
+ },
+ {
+  "id": "1300059",
+  "type": "indicator",
+  "feed": "threatfox",
+  "title": "ip:port: 70.99.32.231:4444",
+  "summary": "RedLine Stealer (botnet C2) confidence 90%",
+  "url": "https://threatfox.abuse.ch/ioc/1300059/",
+  "published": "2026-10-17T03:56:38Z",
+  "severity": "high",
+  "tags": [
+   "RedLine Stealer",
+   "botnet_cc",
+   "infostealer",
+   "ip:port"
+  ],
+  "extra": {
+   "ioc": "70.99.32.231:4444",
+   "ioc_type": "ip:port",
+   "malware": "RedLine Stealer",
+   "threat_type": "botnet_cc",
+   "confidence": 90,
+   "infostealer": true,
+   "reporter": "abuse_ch"
+  }
+ }
+]

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run CTI feed collection every 15 minutes (each feed honours its own interval)
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=15min
+RandomizedDelaySec=60
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,92 @@
+[
+ {
+  "id": "45c38d91f8ca787d",
+  "type": "advisory",
+  "feed": "acsc",
+  "title": "Alert: Critical vulnerability in Fortinet FortiOS SSL-VPN actively exploited",
+  "summary": "Summary text from the ACSC advisory would appear here.",
+  "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/45c38d91f8ca787d",
+  "published": "2026-10-23T04:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "acsc",
+   "australia"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "1c407ad5f0f1b314",
+  "type": "advisory",
+  "feed": "acsc",
+  "title": "Advisory: Infostealer malware targeting Australian organisations via malvertising",
+  "summary": "Summary text from the ACSC advisory would appear here.",
+  "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/1c407ad5f0f1b314",
+  "published": "2026-10-22T02:51:30Z",
+  "severity": "high",
+  "tags": [
+   "acsc",
+   "australia"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "10a5f7f786a5fd05",
+  "type": "advisory",
+  "feed": "acsc",
+  "title": "Advisory: Patch now for Microsoft WSUS deserialisation vulnerability",
+  "summary": "Summary text from the ACSC advisory would appear here.",
+  "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/10a5f7f786a5fd05",
+  "published": "2026-10-21T00:51:30Z",
+  "severity": "high",
+  "tags": [
+   "acsc",
+   "australia"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "c8504f9deacba123",
+  "type": "advisory",
+  "feed": "acsc",
+  "title": "Alert: Ongoing credential phishing impersonating myGov and the ATO",
+  "summary": "Summary text from the ACSC advisory would appear here.",
+  "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/c8504f9deacba123",
+  "published": "2026-10-19T22:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "acsc",
+   "australia"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "baaa99741c9dd912",
+  "type": "advisory",
+  "feed": "acsc",
+  "title": "Publication: Essential Eight maturity model update",
+  "summary": "Summary text from the ACSC advisory would appear here.",
+  "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/baaa99741c9dd912",
+  "published": "2026-10-18T20:51:30Z",
+  "severity": "info",
+  "tags": [
+   "acsc",
+   "australia"
+  ],
+  "extra": {}
+ },
+ {
+  "id": "353bf94d1acc0650",
+  "type": "advisory",
+  "feed": "acsc",
+  "title": "Advisory: Exploitation of Cisco IOS XE web UI",
+  "summary": "Summary text from the ACSC advisory would appear here.",
+  "url": "https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/353bf94d1acc0650",
+  "published": "2026-10-17T18:51:30Z",
+  "severity": "high",
+  "tags": [
+   "acsc",
+   "australia"
+  ],
+  "extra": {}
+ }
+]

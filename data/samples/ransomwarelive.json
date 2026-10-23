@@ -1,0 +1,272 @@
+[
+ {
+  "id": "play:Example Logistics Pty Ltd",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "play claims Example Logistics Pty Ltd",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-22T17:41:12Z",
+  "severity": "critical",
+  "tags": [
+   "AU",
+   "Transport",
+   "anz",
+   "play"
+  ],
+  "extra": {
+   "group": "play",
+   "victim": "Example Logistics Pty Ltd",
+   "country": "AU",
+   "sector": "Transport",
+   "anz": true
+  }
+ },
+ {
+  "id": "incransom:Harbourview Medical Group",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "incransom claims Harbourview Medical Group",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-18T10:46:05Z",
+  "severity": "critical",
+  "tags": [
+   "AU",
+   "Healthcare",
+   "anz",
+   "incransom"
+  ],
+  "extra": {
+   "group": "incransom",
+   "victim": "Harbourview Medical Group",
+   "country": "AU",
+   "sector": "Healthcare",
+   "anz": true
+  }
+ },
+ {
+  "id": "akira:Northfield Engineering",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "akira claims Northfield Engineering",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-22T21:49:38Z",
+  "severity": "critical",
+  "tags": [
+   "Manufacturing",
+   "NZ",
+   "akira",
+   "anz"
+  ],
+  "extra": {
+   "group": "akira",
+   "victim": "Northfield Engineering",
+   "country": "NZ",
+   "sector": "Manufacturing",
+   "anz": true
+  }
+ },
+ {
+  "id": "medusa:Metro Legal Partners",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "medusa claims Metro Legal Partners",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-19T05:15:07Z",
+  "severity": "critical",
+  "tags": [
+   "AU",
+   "Legal",
+   "anz",
+   "medusa"
+  ],
+  "extra": {
+   "group": "medusa",
+   "victim": "Metro Legal Partners",
+   "country": "AU",
+   "sector": "Legal",
+   "anz": true
+  }
+ },
+ {
+  "id": "play:Acme Retail Corp",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "play claims Acme Retail Corp",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-23T02:01:54Z",
+  "severity": "medium",
+  "tags": [
+   "Retail",
+   "US",
+   "play"
+  ],
+  "extra": {
+   "group": "play",
+   "victim": "Acme Retail Corp",
+   "country": "US",
+   "sector": "Retail",
+   "anz": false
+  }
+ },
+ {
+  "id": "akira:Nordic Shipping AS",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "akira claims Nordic Shipping AS",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-17T02:25:55Z",
+  "severity": "medium",
+  "tags": [
+   "NO",
+   "Transport",
+   "akira"
+  ],
+  "extra": {
+   "group": "akira",
+   "victim": "Nordic Shipping AS",
+   "country": "NO",
+   "sector": "Transport",
+   "anz": false
+  }
+ },
+ {
+  "id": "akira:Bavarian Auto Parts GmbH",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "akira claims Bavarian Auto Parts GmbH",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-22T01:11:23Z",
+  "severity": "medium",
+  "tags": [
+   "DE",
+   "Manufacturing",
+   "akira"
+  ],
+  "extra": {
+   "group": "akira",
+   "victim": "Bavarian Auto Parts GmbH",
+   "country": "DE",
+   "sector": "Manufacturing",
+   "anz": false
+  }
+ },
+ {
+  "id": "clop:Riverside School District",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "clop claims Riverside School District",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-21T11:15:07Z",
+  "severity": "medium",
+  "tags": [
+   "Education",
+   "US",
+   "clop"
+  ],
+  "extra": {
+   "group": "clop",
+   "victim": "Riverside School District",
+   "country": "US",
+   "sector": "Education",
+   "anz": false
+  }
+ },
+ {
+  "id": "play:Pacific Mining Services",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "play claims Pacific Mining Services",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-19T00:18:38Z",
+  "severity": "critical",
+  "tags": [
+   "AU",
+   "Mining",
+   "anz",
+   "play"
+  ],
+  "extra": {
+   "group": "play",
+   "victim": "Pacific Mining Services",
+   "country": "AU",
+   "sector": "Mining",
+   "anz": true
+  }
+ },
+ {
+  "id": "lynx:Coastal Credit Union",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "lynx claims Coastal Credit Union",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-22T20:09:43Z",
+  "severity": "medium",
+  "tags": [
+   "Finance",
+   "US",
+   "lynx"
+  ],
+  "extra": {
+   "group": "lynx",
+   "victim": "Coastal Credit Union",
+   "country": "US",
+   "sector": "Finance",
+   "anz": false
+  }
+ },
+ {
+  "id": "incransom:Lakeside Hospital Trust",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "incransom claims Lakeside Hospital Trust",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-19T11:30:45Z",
+  "severity": "medium",
+  "tags": [
+   "GB",
+   "Healthcare",
+   "incransom"
+  ],
+  "extra": {
+   "group": "incransom",
+   "victim": "Lakeside Hospital Trust",
+   "country": "GB",
+   "sector": "Healthcare",
+   "anz": false
+  }
+ },
+ {
+  "id": "safepay:Southern Cross Agri Co-op",
+  "type": "incident",
+  "feed": "ransomwarelive",
+  "title": "safepay claims Southern Cross Agri Co-op",
+  "summary": "",
+  "url": "https://www.ransomware.live/",
+  "published": "2026-10-22T06:21:39Z",
+  "severity": "critical",
+  "tags": [
+   "Agriculture",
+   "NZ",
+   "anz",
+   "safepay"
+  ],
+  "extra": {
+   "group": "safepay",
+   "victim": "Southern Cross Agri Co-op",
+   "country": "NZ",
+   "sector": "Agriculture",
+   "anz": true
+  }
+ }
+]

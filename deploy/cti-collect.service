@@ -1,0 +1,19 @@
+[Unit]
+Description=CTI dashboard feed collection
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=cti
+Group=cti
+WorkingDirectory=/srv/cti/app
+EnvironmentFile=/etc/cti/env
+ExecStart=/srv/cti/app/.venv/bin/python -m pipeline.run
+# the pipeline writes only to data/; everything else is read-only to the service
+ReadWritePaths=/srv/cti/data
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+NoNewPrivileges=yes
+TimeoutStartSec=20min

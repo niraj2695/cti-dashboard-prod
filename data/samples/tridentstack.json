@@ -1,0 +1,45 @@
+[
+  {
+    "id": "TS-NETFX-EOL-3.5",
+    "type": "vulnerability",
+    "feed": "tridentstack",
+    "title": "TS-NETFX-EOL-3.5 TridentStack CVE",
+    "summary": "TridentStack CVE entry for TS-NETFX-EOL-3.5.",
+    "url": "https://tridentstack.com/api/v1/cve/TS-NETFX-EOL-3.5",
+    "published": "2029-01-09T00:00:00Z",
+    "severity": "high",
+    "tags": ["tridentstack", "cve"],
+    "extra": {
+      "cve": "TS-NETFX-EOL-3.5",
+      "kev": false,
+      "fix": false,
+      "cvss": null,
+      "epss": null,
+      "source": "tridentstack",
+      "published_at": "2029-01-09T00:00:00.000Z"
+    },
+    "first_seen": "2026-10-23T00:00:00Z"
+  },
+  {
+    "id": "TS-DOTNET-EOL-10.0",
+    "type": "vulnerability",
+    "feed": "tridentstack",
+    "title": "TS-DOTNET-EOL-10.0 TridentStack CVE",
+    "summary": "TridentStack CVE entry for TS-DOTNET-EOL-10.0.",
+    "url": "https://tridentstack.com/api/v1/cve/TS-DOTNET-EOL-10.0",
+    "published": "2018-11-14T00:00:00Z",
+    "severity": "high",
+    "tags": ["tridentstack", "cve"],
+    "extra": {
+      "cve": "TS-DOTNET-EOL-10.0",
+      "kev": false,
+      "fix": false,
+      "cvss": null,
+      "epss": null,
+      "source": "tridentstack",
+      "published_at": "2018-11-14T00:00:00.000Z"
+    },
+    "first_seen": "2026-10-23T00:00:00Z"
+  }
+]
+

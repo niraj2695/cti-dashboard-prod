@@ -1,0 +1,273 @@
+[
+ {
+  "id": "CVE-2026-31337",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2026-31337 Fortinet FortiOS",
+  "summary": "Authentication bypass in the SSL-VPN web interface allows unauthenticated remote code execution.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-31337",
+  "published": "2026-10-23T01:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "FortiOS",
+   "Fortinet",
+   "ransomware"
+  ],
+  "extra": {
+   "cve": "CVE-2026-31337",
+   "kev": true,
+   "due_date": "2026-11-13",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Known",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2026-28810",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2026-28810 Microsoft Windows",
+  "summary": "Elevation of privilege in the Common Log File System driver.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-28810",
+  "published": "2026-10-21T19:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "Microsoft",
+   "Windows",
+   "ransomware"
+  ],
+  "extra": {
+   "cve": "CVE-2026-28810",
+   "kev": true,
+   "due_date": "2026-11-12",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Known",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2026-27402",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2026-27402 Ivanti Connect Secure",
+  "summary": "Stack buffer overflow permitting remote code execution.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-27402",
+  "published": "2026-10-20T13:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "Connect Secure",
+   "Ivanti"
+  ],
+  "extra": {
+   "cve": "CVE-2026-27402",
+   "kev": true,
+   "due_date": "2026-11-11",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Unknown",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2026-26215",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2026-26215 Cisco IOS XE",
+  "summary": "Web UI privilege escalation via crafted requests.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-26215",
+  "published": "2026-10-19T07:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "Cisco",
+   "IOS XE"
+  ],
+  "extra": {
+   "cve": "CVE-2026-26215",
+   "kev": true,
+   "due_date": "2026-11-10",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Unknown",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2026-25109",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2026-25109 Atlassian Confluence",
+  "summary": "Server-side template injection leading to RCE.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-25109",
+  "published": "2026-10-18T01:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "Atlassian",
+   "Confluence",
+   "ransomware"
+  ],
+  "extra": {
+   "cve": "CVE-2026-25109",
+   "kev": true,
+   "due_date": "2026-11-09",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Known",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2026-24077",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2026-24077 Palo Alto Networks PAN-OS",
+  "summary": "Command injection in GlobalProtect.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-24077",
+  "published": "2026-10-16T19:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "PAN-OS",
+   "Palo Alto Networks"
+  ],
+  "extra": {
+   "cve": "CVE-2026-24077",
+   "kev": true,
+   "due_date": "2026-11-08",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Unknown",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2026-23930",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2026-23930 Citrix NetScaler ADC",
+  "summary": "Memory overread exposing session tokens.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-23930",
+  "published": "2026-10-15T13:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "Citrix",
+   "NetScaler ADC",
+   "ransomware"
+  ],
+  "extra": {
+   "cve": "CVE-2026-23930",
+   "kev": true,
+   "due_date": "2026-11-07",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Known",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2026-22814",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2026-22814 Apple iOS",
+  "summary": "WebKit type confusion exploited in targeted attacks.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2026-22814",
+  "published": "2026-10-14T07:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "Apple",
+   "iOS"
+  ],
+  "extra": {
+   "cve": "CVE-2026-22814",
+   "kev": true,
+   "due_date": "2026-11-06",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Unknown",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2025-61921",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2025-61921 Oracle E-Business Suite",
+  "summary": "Unauthenticated access to sensitive data.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2025-61921",
+  "published": "2026-10-13T01:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "E-Business Suite",
+   "Oracle",
+   "ransomware"
+  ],
+  "extra": {
+   "cve": "CVE-2025-61921",
+   "kev": true,
+   "due_date": "2026-11-05",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Known",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2025-59287",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2025-59287 Microsoft WSUS",
+  "summary": "Deserialisation of untrusted data leading to RCE.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2025-59287",
+  "published": "2026-10-11T19:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "Microsoft",
+   "WSUS"
+  ],
+  "extra": {
+   "cve": "CVE-2025-59287",
+   "kev": true,
+   "due_date": "2026-11-04",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Unknown",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2025-55182",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2025-55182 Progress MOVEit Transfer",
+  "summary": "SQL injection in the web application.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2025-55182",
+  "published": "2026-10-10T13:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "MOVEit Transfer",
+   "Progress",
+   "ransomware"
+  ],
+  "extra": {
+   "cve": "CVE-2025-55182",
+   "kev": true,
+   "due_date": "2026-11-03",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Known",
+   "cwes": []
+  }
+ },
+ {
+  "id": "CVE-2025-53770",
+  "type": "vulnerability",
+  "feed": "kev",
+  "title": "CVE-2025-53770 Microsoft SharePoint Server",
+  "summary": "Deserialisation permitting unauthenticated RCE.",
+  "url": "https://www.cve.org/CVERecord?id=CVE-2025-53770",
+  "published": "2026-10-09T07:51:30Z",
+  "severity": "critical",
+  "tags": [
+   "Microsoft",
+   "SharePoint Server",
+   "ransomware"
+  ],
+  "extra": {
+   "cve": "CVE-2025-53770",
+   "kev": true,
+   "due_date": "2026-11-02",
+   "required_action": "Apply mitigations per vendor instructions or discontinue use.",
+   "ransomware_use": "Known",
+   "cwes": []
+  }
+ }
+]
