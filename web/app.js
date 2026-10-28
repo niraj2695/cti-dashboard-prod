@@ -65,9 +65,9 @@
   }
 
   function renderPanels() {
-    const f = records.filter(matches).filter((r) => r.feed !== "tridentstack" || r.extra.source_type === "api");
+    const f = records.filter(matches);
 
-    const kev = f.filter((r) => r.feed === "tridentstack").sort((a, b) => (b.extra.priority || 0) - (a.extra.priority || 0));
+    const kev = f.filter((r) => r.feed === "kev").sort((a, b) => (b.extra.priority || 0) - (a.extra.priority || 0));
     fill("#p-kev", kev.slice(0, 40).map((r) => row(r,
       `<b>P ${r.extra.priority ?? "-"}</b>EPSS ${r.extra.epss != null ? (r.extra.epss * 100).toFixed(0) + "%" : "n/a"} · CVSS ${r.extra.cvss ?? "n/a"}<br>due ${esc(r.extra.due_date ?? "-")}`
     )).join(""), kev.length);
@@ -129,9 +129,3 @@
   tick(); setInterval(tick, 1000);
   load(); setInterval(load, REFRESH_MS);
 })();
-
-
-
-
-
-
