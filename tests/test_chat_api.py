@@ -66,15 +66,15 @@ def test_request_answer_uses_managed_identity_and_deployment(monkeypatch):
 
     class Credential:
         def get_token(self, scope):
-            assert scope == "https://cognitiveservices.azure.com/.default"
+            assert scope == "https://ai.azure.com/.default"
             return types.SimpleNamespace(token="managed-identity-token")
 
     identity_module.ManagedIdentityCredential = Credential
     azure_module.identity = identity_module
     monkeypatch.setitem(sys.modules, "azure", azure_module)
     monkeypatch.setitem(sys.modules, "azure.identity", identity_module)
-    monkeypatch.setenv("AZURE_OPENAI_ENDPOINT", "https://example.openai.azure.com/")
-    monkeypatch.setenv("AZURE_OPENAI_DEPLOYMENT", "cti-chat")
+    monkeypatch.setenv("AZURE_OPENAI_ENDPOINT", "https://example.services.ai.azure.com/openai/v1/")
+    monkeypatch.setenv("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini")
     captured = {}
 
     class Response:
@@ -82,7 +82,10 @@ def test_request_answer_uses_managed_identity_and_deployment(monkeypatch):
             pass
 
         def json(self):
-            return {"choices": [{"message": {"content": "Grounded answer."}}]}
+            return {"output": [{
+                "type": "message",
+                "content": [{"type": "output_text", "text": "Grounded answer."}],
+            }]}
 
     def fake_post(url, **kwargs):
         captured.update(url=url, **kwargs)
@@ -92,9 +95,43 @@ def test_request_answer_uses_managed_identity_and_deployment(monkeypatch):
     answer = chat.request_answer("What happened?", {"records": []})
 
     assert answer == "Grounded answer."
-    assert captured["url"] == "https://example.openai.azure.com/openai/v1/chat/completions"
+    assert captured["url"] == "https://example.services.ai.azure.com/openai/v1/responses"
     assert captured["headers"]["Authorization"] == "Bearer managed-identity-token"
-    assert captured["json"]["model"] == "cti-chat"
+    assert captured["json"]["model"] == "gpt-5-mini"
+    assert "Question:\nWhat happened?" in captured["json"]["input"]
+
+
+def test_request_answer_adds_foundry_api_path_when_endpoint_is_resource_root(monkeypatch):
+    azure_module = types.ModuleType("azure")
+    identity_module = types.ModuleType("azure.identity")
+    identity_module.ManagedIdentityCredential = lambda: types.SimpleNamespace(
+        get_token=lambda scope: types.SimpleNamespace(token="managed-identity-token")
+    )
+    azure_module.identity = identity_module
+    monkeypatch.setitem(sys.modules, "azure", azure_module)
+    monkeypatch.setitem(sys.modules, "azure.identity", identity_module)
+    monkeypatch.setenv("AZURE_OPENAI_ENDPOINT", "https://example.services.ai.azure.com/")
+    monkeypatch.setenv("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini")
+
+    class Response:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"output": [{
+                "type": "message",
+                "content": [{"type": "output_text", "text": "Answer."}],
+            }]}
+
+    captured = {}
+
+    def fake_post(url, **kwargs):
+        captured["url"] = url
+        return Response()
+
+    monkeypatch.setattr(chat.requests, "post", fake_post)
+    assert chat.request_answer("Question", {}) == "Answer."
+    assert captured["url"] == "https://example.services.ai.azure.com/openai/v1/responses"
 
 
 def test_missing_dashboard_data_is_a_service_error(tmp_path, monkeypatch):

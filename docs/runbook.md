@@ -27,10 +27,10 @@
 See README "Server deployment". Total time about 30 minutes.
 
 ## AI chat setup
-1. Enable the VM's system-assigned managed identity and assign it the `Cognitive Services OpenAI User` role on the Azure OpenAI resource.
-2. Set `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_DEPLOYMENT` in `/etc/cti/env`. Keep the endpoint as the resource URL, for example `https://<resource>.openai.azure.com`.
+1. Enable the VM's system-assigned managed identity and grant it model inference access to the Azure AI Foundry resource (for example, the `Azure AI User` role where applicable).
+2. Set `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_DEPLOYMENT` in `/etc/cti/env`. The endpoint may be the Foundry resource URL, for example `https://<resource>.services.ai.azure.com`, or the `/openai/v1` base URL. Use the exact model deployment name, not the project name.
 3. Run `sudo bash /srv/cti/checkout/deploy/install.sh`. The installer starts the API on localhost and configures Nginx to allow public chat requests, limit requests per client IP, cap global usage at 5 requests per minute, and allow only one active model request. The API rejects plain HTTP. Verify its local health with `curl http://127.0.0.1:8000/health`.
 4. Point your domain to the VM and run `sudo certbot --nginx -d <your-domain>`. Chat is available only over HTTPS.
-5. Open the dashboard using HTTPS and ask a question. The API reads dashboard JSON, returns relevant source links, and uses the VM managed identity to call Azure OpenAI.
+5. Open the dashboard using HTTPS and ask a question. The API reads dashboard JSON, returns relevant source links, and uses the VM managed identity to call the Foundry Responses API with the `https://ai.azure.com/.default` token scope.
 
 The API is read-only. It does not expose a general-purpose model interface, execute commands, or log question text. Chat is public and can incur Azure model costs; monitor usage, retain the Nginx rate limits, and set Azure budget alerts.

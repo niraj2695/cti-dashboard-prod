@@ -75,9 +75,10 @@ For Azure, allow inbound 443 and 80 in the VM's Network Security Group, and rest
 The pipeline runs as the unprivileged `cti` user under systemd with `ProtectSystem=strict`, writing
 only to `/srv/cti/data`. Nginx serves `web/` and exposes `/srv/cti/data` read-only at `/data/`.
 The chat API runs on localhost, requires HTTPS, is publicly accessible without sign-in, and uses the VM's system-assigned
-managed identity to access Azure OpenAI. Assign that identity the `Cognitive Services OpenAI User` role
-on the Azure OpenAI resource. Chat settings are `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_DEPLOYMENT`
-in `/etc/cti/env`; no Azure OpenAI key is put in the browser or repository. Nginx limits aggregate
+managed identity to access Azure AI Foundry. Grant that identity model inference access to the Foundry resource
+(for example, the `Azure AI User` role where applicable). Chat settings are `AZURE_OPENAI_ENDPOINT` and
+`AZURE_OPENAI_DEPLOYMENT` in `/etc/cti/env`; use the Foundry resource endpoint and exact deployment name.
+No Azure key is put in the browser or repository. Nginx limits aggregate
 chat usage to five requests per minute and one active request to reduce unexpected model usage. Since
 chat is public, monitor usage and costs closely.
 
