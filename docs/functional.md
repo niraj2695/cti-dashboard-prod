@@ -13,7 +13,9 @@ The application is intended to help security teams and business stakeholders und
 - **Adds useful context:** Enriches CVEs with available EPSS exploit-likelihood data, NVD CVSS severity information, and MITRE ATT&CK references. It calculates a prioritization score for vulnerability triage.
 - **Shows activity at a glance:** Displays seven-day counts, feed health, last successful update times, and panels for key threat categories.
 - **Supports exploration:** Allows users to search records by keyword and filter vulnerability data by severity.
-- **Answers questions about the collected data:** The public CTI assistant uses Azure OpenAI to summarize relevant dashboard records and provides source links and the data snapshot time with its answer.
+- **Supports follow-up questions:** A bottom-right floating chat widget keeps named conversation threads in the user's browser so users can return to previous discussions and ask related follow-ups without leaving the dashboard. It can be opened or closed without covering dashboard content. Responses include source links and the data snapshot time. Threads remain on that browser and can be deleted.
+- **Presents readable responses:** Headings, lists, emphasis, links, and code blocks are formatted for easier reading.
+- **Looks up CVEs when explicitly asked:** A prompt in the exact form `Explain CVE-YYYY-NNNN` triggers a bounded lookup against NIST NVD. Other chat questions do not cause the assistant to browse the internet.
 - **Produces a weekly summary:** A reporting utility generates a draft weekly threat landscape summary from the collected records for analyst review.
 - **Highlights regional context:** Ransomware reporting and news panels surface Australia and New Zealand information where the source data provides it.
 
@@ -51,6 +53,7 @@ The dashboard displays source metadata such as titles, descriptions, dates, seve
 - A feed reporting an issue does not establish that the organisation is affected. The application does not currently ingest the organisation's asset inventory or verify exposure.
 - The vulnerability priority score is a triage aid, not a formal risk score, guarantee of exploitation, or substitute for business impact assessment.
 - AI-generated answers can be incomplete or incorrect. Answers are limited to available dashboard context and should be checked against the cited source.
+- The only external chat lookup is NIST NVD for an explicitly formatted `Explain CVE-...` request; it returns CVE metadata and not exploit instructions.
 - The assistant does not browse arbitrary sites, execute code, create tickets, block indicators, patch systems, or perform incident response.
 - Public chat can consume Azure OpenAI resources and incur costs. Server-side throttling reduces usage but does not replace cost monitoring and budget controls.
 - The dashboard is not an alerting or monitoring guarantee. A missing record or unavailable feed must not be interpreted as evidence that no threat exists.

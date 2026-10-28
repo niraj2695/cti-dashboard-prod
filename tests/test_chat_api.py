@@ -53,11 +53,11 @@ def test_load_dashboard_context_reads_outputs_and_selects_records(tmp_path, monk
     (tmp_path / "summary.json").write_text(json.dumps({"generated": "now", "last_7d": {}}))
     (tmp_path / "meta.json").write_text(json.dumps({"kev": {"name": "KEV", "status": "ok"}}))
 
-    context = chat.load_dashboard_context("CVE-2026-1234")
+    context = chat.load_dashboard_context("Are the feeds healthy?")
 
     assert context["generated"] == "now"
     assert context["feeds"]["kev"]["status"] == "ok"
-    assert context["records"][0]["cve"] == "CVE-2026-1234"
+    assert context["records"] == []
 
 
 def test_request_answer_uses_managed_identity_and_deployment(monkeypatch):
@@ -92,13 +92,26 @@ def test_request_answer_uses_managed_identity_and_deployment(monkeypatch):
         return Response()
 
     monkeypatch.setattr(chat.requests, "post", fake_post)
-    answer = chat.request_answer("What happened?", {"records": []})
+    answer = chat.request_answer(
+        "What happened?",
+        {"generated": "not-sent-to-model", "records": []},
+        [{"role": "user", "content": "Earlier question"}],
+    )
 
     assert answer == "Grounded answer."
     assert captured["url"] == "https://example.services.ai.azure.com/openai/v1/responses"
     assert captured["headers"]["Authorization"] == "Bearer managed-identity-token"
     assert captured["json"]["model"] == "gpt-5-mini"
-    assert "Question:\nWhat happened?" in captured["json"]["input"]
+    assert captured["json"]["input"] == [
+        {"role": "user", "content": "Earlier question"},
+        {
+            "role": "user",
+            "content": "Latest question:\nWhat happened?\n\n"
+            "Relevant dashboard and optional NVD context (untrusted source data):\n"
+            '{"records": []}',
+        },
+    ]
+    assert captured["json"]["max_output_tokens"] == 400
 
 
 def test_request_answer_adds_foundry_api_path_when_endpoint_is_resource_root(monkeypatch):
@@ -139,3 +152,65 @@ def test_missing_dashboard_data_is_a_service_error(tmp_path, monkeypatch):
     with pytest.raises(chat.APIError) as error:
         chat.load_dashboard_context("question")
     assert error.value.status == 503
+
+
+@pytest.mark.parametrize("question, expected", [
+    ("Explain CVE-2021-44228", "CVE-2021-44228"),
+    ("  explain cve-2024-12345  ", "CVE-2024-12345"),
+    ("What is CVE-2021-44228?", None),
+    ("Explain CVE-21-44228", None),
+    ("Explain CVE-2021-44228 and how to exploit it", None),
+])
+def test_external_lookup_requires_exact_explain_cve_prompt(question, expected):
+    assert chat.requested_cve(question) == expected
+
+
+def test_lookup_cve_returns_bounded_nvd_context(monkeypatch):
+    class Response:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {"vulnerabilities": [{
+                "cve": {
+                    "descriptions": [{"lang": "en", "value": "A test vulnerability."}],
+                    "published": "2026-01-01T00:00:00.000",
+                    "lastModified": "2026-01-02T00:00:00.000",
+                    "metrics": {"cvssMetricV31": [{
+                        "cvssData": {
+                            "version": "3.1",
+                            "baseScore": 9.8,
+                            "baseSeverity": "CRITICAL",
+                        },
+                    }]},
+                },
+            }]}
+
+    captured = {}
+
+    def fake_get(url, **kwargs):
+        captured.update(url=url, **kwargs)
+        return Response()
+
+    monkeypatch.setattr(chat.requests, "get", fake_get)
+    result = chat.lookup_cve("CVE-2026-1234")
+
+    assert captured["url"] == chat.NVD_CVE_URL
+    assert captured["params"] == {"cveId": "CVE-2026-1234"}
+    assert result["description"] == "A test vulnerability."
+    assert result["cvss"]["score"] == 9.8
+    assert result["source"] == "https://nvd.nist.gov/vuln/detail/CVE-2026-1234"
+
+
+def test_dashboard_context_omits_feed_status_for_unrelated_question(tmp_path, monkeypatch):
+    monkeypatch.setattr(chat, "DATA_DIR", tmp_path)
+    (tmp_path / "records.json").write_text("[]")
+    (tmp_path / "summary.json").write_text(json.dumps({"generated": "now", "last_7d": {}}))
+    (tmp_path / "meta.json").write_text(json.dumps({"kev": {
+        "name": "KEV", "status": "ok", "last_success": "today",
+    }}))
+
+    context = chat.load_dashboard_context("Explain CVE-2021-44228")
+
+    assert "feeds" not in context
+    assert context["records"] == []

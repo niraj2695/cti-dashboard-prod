@@ -46,7 +46,7 @@ The dashboard provides:
 - Vulnerability prioritization, including KEV, EPSS, CVSS, ransomware-related tags, and remediation information where supplied.
 - Panels for advisories, ransomware incidents, infostealer indicators, other indicators, ATT&CK groups/techniques, news, and per-feed status.
 - Search across records and a severity filter; panels display freshness based on the last successful collection.
-- A responsive layout with chat in a dedicated right-hand desktop column; on narrower screens it moves above the dashboard panels rather than covering them.
+- A responsive floating chat bubble in the lower-right corner; it opens a compact, non-modal assistant window without covering or reflowing dashboard panels.
 - A public, read-only CTI assistant with source links and the dashboard snapshot timestamp.
 
 Infostealer information is metadata-only. The project is designed not to retain or display stolen usernames, passwords, cookies, tokens, or personal identifiers.
@@ -89,17 +89,19 @@ Indicators, news, incidents, advisories, and vulnerabilities use different reten
 
 The static browser app reads `/data/records.json`, `/data/meta.json`, `/data/summary.json`, and `/data/attack.json`, refreshing the dashboard periodically. Browser-side search and severity filtering operate on the loaded data. Feed-provided text is escaped before it is rendered as HTML.
 
+The assistant opens from a fixed-position chat bubble and can be closed without losing the current conversation. Its compact window includes a collapsible recent-thread list and a new-conversation action. Threads are stored in the user's browser local storage (up to 20 threads and 30 messages per thread); they are not synced to the server or shared between browsers. Users can delete saved threads. Assistant markdown is rendered with DOM nodes and text content rather than injecting model output as HTML; supported formatting includes headings, lists, emphasis, links over HTTPS, inline code, and fenced code blocks.
+
 Chat follows a separate server-side path:
 
 1. The browser sends the question as JSON to `/api/chat` over HTTPS. No user login is required.
 2. Nginx applies request limits and proxies to the API on `127.0.0.1:8000`.
 3. The API validates the request, reads dashboard JSON from `CTI_DATA_DIR`, selects up to 12 relevant records, and bounds the context size.
-4. The API requests an Azure AI token using the VM's managed identity and calls the configured Azure AI Foundry deployment through the Responses API.
-5. The response includes the answer, source records, and snapshot timestamp. The browser only links to HTTPS source URLs.
+4. The API requests an Azure AI token using the VM's managed identity and calls the configured Azure AI Foundry deployment through the Responses API. It sends at most the last four conversation messages and bounds source records and output tokens.
+5. Only a question matching `Explain CVE-YYYY-NNNN` triggers an external NIST NVD lookup; other questions use local dashboard data only. The response includes the answer, source records, and snapshot timestamp. The browser only links to HTTPS source URLs.
 
 The assistant is instructed to answer only from the provided dashboard snapshot, treat feed content as untrusted data rather than instructions, and say when the context does not answer a question. It is not a general browsing tool, incident-response system, or action-taking agent. The API does not log question bodies.
 
-The API limits request bodies to 8 KiB and questions to 1,000 characters. Nginx applies per-client throttling, a global chat limit of five requests per minute (with a small burst), and a single concurrent chat request. These controls reduce, but do not eliminate, public-service abuse or model costs.
+The API limits request bodies to 8 KiB, questions and history messages to 1,000 characters, and conversation context to four prior messages. Model output is capped at 400 tokens. Feed health and seven-day summaries are only included in model context for questions about those topics. Nginx applies per-client throttling, a global chat limit of five requests per minute (with a small burst), and a single concurrent chat request. These controls reduce, but do not eliminate, public-service abuse or model costs.
 
 ## 6. Local development
 

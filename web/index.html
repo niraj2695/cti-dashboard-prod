@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CTI Dashboard</title>
+<title>ThreatViz</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
   <div class="brand">
     <span class="dot" id="healthDot"></span>
-    <h1>CTI DASHBOARD</h1>
+    <h1>ThreatViz</h1>
     <span class="sub">Open-source threat intelligence · RMIT student project</span>
   </div>
   <div class="controls">
     <input id="search" type="search" placeholder="Filter: CVE, malware, group, country, keyword">
-    <select id="sevFilter">
+    <select id="sevFilter" aria-label="Filter by severity">
       <option value="">All severities</option>
       <option value="critical">Critical</option>
       <option value="high">High</option>
@@ -28,60 +28,39 @@
 
 <section class="tiles" id="tiles"></section>
 
-<main class="grid">
-  <article class="panel" id="p-chat">
-    <h2>CTI assistant <small>Azure OpenAI · read-only</small></h2>
-    <div class="chat-answer" id="chatAnswer" aria-live="polite"></div>
-    <div class="chat-sources" id="chatSources"></div>
-    <p class="chat-status" id="chatStatus" aria-live="polite"></p>
-    <form class="chat-form" id="chatForm">
-      <label class="sr-only" for="chatQuestion">Ask about dashboard threat intelligence</label>
-      <input id="chatQuestion" maxlength="1000" placeholder="Ask about vulnerabilities, indicators, or feed health" required>
-      <button id="chatSend" type="submit">Ask</button>
-    </form>
+<main class="dashboard-panels" aria-label="Threat intelligence dashboard">
+  <article class="panel" id="p-kev" data-feed="kev">
+    <h2>Exploited vulnerabilities <small>CISA KEV · EPSS · NVD</small><span class="fresh"></span></h2>
+    <div class="body"></div>
   </article>
-
-  <section class="dashboard-panels" aria-label="Threat intelligence dashboard">
-    <article class="panel" id="p-kev" data-feed="kev">
-      <h2>Exploited vulnerabilities <small>CISA KEV · EPSS · NVD</small><span class="fresh"></span></h2>
-      <div class="body"></div>
-    </article>
-
-    <article class="panel" id="p-acsc" data-feed="acsc">
-      <h2>CISA advisories <small>All Advisories</small><span class="fresh"></span></h2>
-      <div class="body"></div>
-    </article>
-
-    <article class="panel" id="p-ransom" data-feed="ransomwarelive">
-      <h2>Ransomware victims <small>ransomware.live · AU/NZ first</small><span class="fresh"></span></h2>
-      <div class="body"></div>
-    </article>
-
-    <article class="panel" id="p-stealer" data-feed="threatfox">
-      <h2>Infostealer activity <small>ThreatFox · metadata only</small><span class="fresh"></span></h2>
-      <div class="body"></div>
-    </article>
-
-    <article class="panel" id="p-ioc" data-feed="urlhaus">
-      <h2>Malware infrastructure <small>ThreatFox · URLhaus</small><span class="fresh"></span></h2>
-      <div class="body"></div>
-    </article>
-
-    <article class="panel" id="p-attack" data-feed="attack">
-      <h2>Tracked groups and techniques <small>MITRE ATT&amp;CK</small><span class="fresh"></span></h2>
-      <div class="body"></div>
-    </article>
-
-    <article class="panel wide" id="p-news" data-feed="news">
-      <h2>News wire <small>BleepingComputer · THN · The Record · Krebs · SecurityWeek</small><span class="fresh"></span></h2>
-      <div class="body"></div>
-    </article>
-
-    <article class="panel wide" id="p-health">
-      <h2>Feed health <small>meta.json</small></h2>
-      <div class="body"></div>
-    </article>
-  </section>
+  <article class="panel" id="p-acsc" data-feed="acsc">
+    <h2>CISA advisories <small>All Advisories</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+  <article class="panel" id="p-ransom" data-feed="ransomwarelive">
+    <h2>Ransomware victims <small>ransomware.live · AU/NZ first</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+  <article class="panel" id="p-stealer" data-feed="threatfox">
+    <h2>Infostealer activity <small>ThreatFox · metadata only</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+  <article class="panel" id="p-ioc" data-feed="urlhaus">
+    <h2>Malware infrastructure <small>ThreatFox · URLhaus</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+  <article class="panel" id="p-attack" data-feed="attack">
+    <h2>Tracked groups and techniques <small>MITRE ATT&amp;CK</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+  <article class="panel wide" id="p-news" data-feed="news">
+    <h2>News wire <small>BleepingComputer · THN · The Record · Krebs · SecurityWeek</small><span class="fresh"></span></h2>
+    <div class="body"></div>
+  </article>
+  <article class="panel wide" id="p-health">
+    <h2>Feed health <small>Collection status</small></h2>
+    <div class="body"></div>
+  </article>
 </main>
 
 <footer>
@@ -89,6 +68,34 @@
   No credentials, cookies or personal data from stolen datasets are collected or displayed.
   <span id="generated"></span>
 </footer>
+
+<button class="chat-bubble" id="chatBubble" type="button" aria-label="Open ThreatViz AI assistant" aria-expanded="false" aria-controls="chatWidget">
+  <span class="bubble-icon" aria-hidden="true">✦</span>
+  <span class="bubble-label">ThreatViz AI</span>
+</button>
+
+<section class="chat-widget" id="chatWidget" aria-label="ThreatViz assistant" hidden>
+  <header class="widget-header">
+    <div class="widget-brand">
+      <span class="widget-mark" aria-hidden="true">✦</span>
+      <span><strong>ThreatViz assistant</strong><small>Dashboard intelligence · read-only</small></span>
+    </div>
+    <div class="widget-actions">
+      <button id="newChat" type="button" aria-label="Start a new conversation" title="New conversation">＋</button>
+      <button id="toggleHistory" type="button" aria-label="Show saved conversations" aria-expanded="false" title="Conversation history">☷</button>
+      <button id="chatClose" type="button" aria-label="Close chat">×</button>
+    </div>
+  </header>
+  <div class="widget-history" id="threadList" aria-label="Saved conversations" hidden></div>
+  <div class="conversation" id="chatAnswer" aria-live="polite" aria-label="Conversation"></div>
+  <p class="chat-status" id="chatStatus" aria-live="polite"></p>
+  <form class="chat-form" id="chatForm">
+    <label class="sr-only" for="chatQuestion">Ask about threat intelligence</label>
+    <textarea id="chatQuestion" rows="1" maxlength="1000" placeholder="Ask about dashboard data, or: Explain CVE-2021-44228" required></textarea>
+    <button id="chatSend" type="submit" aria-label="Send message">↑</button>
+  </form>
+  <p class="widget-note">For an external NIST lookup, ask exactly: <code>Explain CVE-2021-44228</code></p>
+</section>
 
 <script src="app.js"></script>
 </body>
