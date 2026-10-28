@@ -6,7 +6,7 @@
   "title": "Fortinet warns of actively exploited SSL-VPN zero-day",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/f9349d9545048547",
-  "published": "2026-10-23T06:51:30Z",
+  "published": "2026-10-28T10:41:14Z",
   "severity": "info",
   "tags": [
    "bleepingcomputer",
@@ -23,7 +23,7 @@
   "title": "Lumma Stealer resurfaces with new loader targeting enterprise users",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/845e1d96d9fbe5a7",
-  "published": "2026-10-22T19:51:30Z",
+  "published": "2026-10-27T23:41:14Z",
   "severity": "info",
   "tags": [
    "infostealer",
@@ -40,7 +40,7 @@
   "title": "Australian logistics firm confirms ransomware attack disrupting deliveries",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/26b42c187ccfb75c",
-  "published": "2026-10-22T08:51:30Z",
+  "published": "2026-10-27T12:41:14Z",
   "severity": "high",
   "tags": [
    "australia",
@@ -58,7 +58,7 @@
   "title": "Inside the infostealer log economy",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/0ab340f8f7f81489",
-  "published": "2026-10-21T21:51:30Z",
+  "published": "2026-10-27T01:41:14Z",
   "severity": "info",
   "tags": [
    "infostealer",
@@ -75,7 +75,7 @@
   "title": "Cisco patches IOS XE flaw exploited by state-backed group",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/2f628727337437c1",
-  "published": "2026-10-21T10:51:30Z",
+  "published": "2026-10-26T14:41:14Z",
   "severity": "info",
   "tags": [
    "apt",
@@ -93,7 +93,7 @@
   "title": "Qilin ransomware claims attack on New Zealand manufacturer",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/6d11b5beff05b554",
-  "published": "2026-10-20T23:51:30Z",
+  "published": "2026-10-26T03:41:14Z",
   "severity": "info",
   "tags": [
    "bleepingcomputer",
@@ -110,7 +110,7 @@
   "title": "Phishing campaign abuses myGov branding to harvest credentials",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/1590dd84a2c5d112",
-  "published": "2026-10-20T12:51:30Z",
+  "published": "2026-10-25T16:41:14Z",
   "severity": "high",
   "tags": [
    "australia",
@@ -128,7 +128,7 @@
   "title": "ACSC publishes annual Cyber Threat Report",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/6f9f10ec93259423",
-  "published": "2026-10-20T01:51:30Z",
+  "published": "2026-10-25T05:41:14Z",
   "severity": "high",
   "tags": [
    "australia",
@@ -145,7 +145,7 @@
   "title": "AWS IAM misconfiguration leads to data exposure at SaaS provider",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/4c89382006126694",
-  "published": "2026-10-19T14:51:30Z",
+  "published": "2026-10-24T18:41:14Z",
   "severity": "info",
   "tags": [
    "cloud",
@@ -162,7 +162,7 @@
   "title": "Microsoft WSUS RCE now exploited in the wild",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/74a5f13ac8990f7a",
-  "published": "2026-10-19T03:51:30Z",
+  "published": "2026-10-24T07:41:14Z",
   "severity": "info",
   "tags": [
    "bleepingcomputer",
@@ -179,7 +179,7 @@
   "title": "Who is behind the Scattered Spider arrests?",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/6278ea2ea28f11cb",
-  "published": "2026-10-18T16:51:30Z",
+  "published": "2026-10-23T20:41:14Z",
   "severity": "info",
   "tags": [
    "apt",
@@ -196,7 +196,7 @@
   "title": "Chinese APT targets Australian telecoms with new backdoor",
   "summary": "Article summary would appear here.",
   "url": "https://example.invalid/8d524f3301659bd8",
-  "published": "2026-10-18T05:51:30Z",
+  "published": "2026-10-23T09:41:14Z",
   "severity": "high",
   "tags": [
    "apt",

@@ -1,4 +1,4 @@
-"""CISA cybersecurity advisories RSS collector.
+"""CISA all-advisories RSS collector.
 
 The legacy ``acsc`` feed id is retained for compatibility with existing data and UI.
 """
@@ -6,9 +6,9 @@ from .base import get, load_sample, parse_rss, rss_to_records
 
 FEED = {
     "id": "acsc",
-    "name": "CISA Cybersecurity Advisories",
+    "name": "CISA All Advisories",
     "category": "advisory",
-    "url": "https://www.cisa.gov/cybersecurity-advisories/cybersecurity-advisories.xml",
+    "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
     "licence": "U.S. Government public information; verify source terms",
     "interval_minutes": 60,
 }
