@@ -6,7 +6,7 @@ from .base import get, load_sample, parse_rss, rss_to_records
 
 FEED = {
     "id": "acsc",
-    "name": "ACSC Alerts and Advisories",
+    "name": "ACSC Advisories",
     "category": "advisory",
     "url": "https://www.cyber.gov.au/rss/advisories",
     "licence": "Commonwealth of Australia, CC BY 4.0 (verify on site)",
