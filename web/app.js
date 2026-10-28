@@ -53,7 +53,15 @@
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question }),
       });
-      const payload = await response.json();
+      const responseText = await response.text();
+      let payload;
+      try {
+        payload = JSON.parse(responseText);
+      } catch {
+        throw new Error(
+          `Chat service returned a non-JSON response (HTTP ${response.status}). Check the chat service and Nginx logs.`
+        );
+      }
       if (!response.ok) throw new Error(payload.error || `Request failed (${response.status}).`);
       $("#chatAnswer").textContent = payload.answer;
       addChatSources($("#chatSources"), payload.sources || []);
