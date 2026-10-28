@@ -1,7 +1,7 @@
 # Weekly threat landscape summary
 Generated 2026-10-18T20:50:59Z covering the 7 days to 18 Oct 2026.
 
-**At a glance:** 6 CVEs added to CISA KEV, 6 ACSC advisories, 100 new indicators (33 infostealer), 12 ransomware victims posted (6 in Australia or New Zealand).
+**At a glance:** 6 CVEs added to CISA KEV, 6 CISA advisories, 100 new indicators (33 infostealer), 12 ransomware victims posted (6 in Australia or New Zealand).
 
 ## Newly exploited vulnerabilities (CISA KEV), by priority
 
@@ -12,14 +12,14 @@ Generated 2026-10-18T20:50:59Z covering the 7 days to 18 Oct 2026.
 - **CVE-2026-24077** Palo Alto Networks PAN-OS (EPSS 0.1143, CVSS 9.8, patch by 2026-11-03) Command injection in GlobalProtect.
 - **CVE-2026-26215** Cisco IOS XE (EPSS 0.1034, CVSS 7.5, patch by 2026-11-05) Web UI privilege escalation via crafted requests.
 
-## ACSC alerts and advisories
+## CISA cybersecurity advisories
 
-- [Alert: Critical vulnerability in Fortinet FortiOS SSL-VPN actively exploited](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/45c38d91f8ca787d)
-- [Advisory: Infostealer malware targeting Australian organisations via malvertising](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/1c407ad5f0f1b314)
-- [Advisory: Patch now for Microsoft WSUS deserialisation vulnerability](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/10a5f7f786a5fd05)
-- [Alert: Ongoing credential phishing impersonating myGov and the ATO](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/c8504f9deacba123)
-- [Publication: Essential Eight maturity model update](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/baaa99741c9dd912)
-- [Advisory: Exploitation of Cisco IOS XE web UI](https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/353bf94d1acc0650)
+- [CISA Cybersecurity Advisory: Ransomware activity targeting critical infrastructure](https://example.invalid/45c38d91f8ca787d)
+- [CISA Cybersecurity Advisory: Actively exploited vulnerability in edge devices](https://example.invalid/1c407ad5f0f1b314)
+- [CISA Cybersecurity Advisory: Guidance for securing cloud environments](https://example.invalid/10a5f7f786a5fd05)
+- [CISA Cybersecurity Advisory: Threat actor techniques and mitigations](https://example.invalid/c8504f9deacba123)
+- [CISA Cybersecurity Advisory: Malware indicators and defensive actions](https://example.invalid/baaa99741c9dd912)
+- [CISA Cybersecurity Advisory: Protecting organizations from phishing](https://example.invalid/353bf94d1acc0650)
 
 ## Ransomware victims in Australia and New Zealand
 
@@ -74,4 +74,3 @@ Generated 2026-10-18T20:50:59Z covering the 7 days to 18 Oct 2026.
 ## Analyst assessment
 
 _(Written by the CTI Analyst each week: what changed, what it means for an Australian organisation, and what to do about it. The generated sections above are inputs, not the product.)_
-

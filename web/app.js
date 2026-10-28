@@ -51,7 +51,7 @@
     const d = summary.last_7d || {};
     const tiles = [
       [d.kev_added, "KEV added · 7d", d.kev_added > 0],
-      [d.acsc, "ACSC advisories · 7d", false],
+      [d.acsc, "CISA advisories · 7d", false],
       [d.anz_victims, "AU/NZ ransomware victims · 7d", d.anz_victims > 0],
       [d.ransomware_victims, "Ransomware victims · 7d", false],
       [d.infostealer_iocs, "Infostealer IOCs · 7d", false],

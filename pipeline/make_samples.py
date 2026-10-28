@@ -57,18 +57,18 @@ dump("epss", [{"cve": c, "epss": round(random.uniform(0.05, 0.97), 4), "percenti
 dump("nvd", [{"cve": c, "cvss": random.choice([7.5, 8.1, 8.8, 9.1, 9.8, 10.0]), "cvss_severity": random.choice(["high", "critical"]),
               "cvss_version": "cvssMetricV31", "description": d} for c, v, p, d, _ in kev_rows])
 
-# ACSC
-acsc_titles = [
-    ("Alert: Critical vulnerability in Fortinet FortiOS SSL-VPN actively exploited", "critical"),
-    ("Advisory: Infostealer malware targeting Australian organisations via malvertising", "high"),
-    ("Advisory: Patch now for Microsoft WSUS deserialisation vulnerability", "high"),
-    ("Alert: Ongoing credential phishing impersonating myGov and the ATO", "critical"),
-    ("Publication: Essential Eight maturity model update", "info"),
-    ("Advisory: Exploitation of Cisco IOS XE web UI", "high"),
+# CISA Cybersecurity Advisories
+cisa_titles = [
+    "CISA Cybersecurity Advisory: Ransomware activity targeting critical infrastructure",
+    "CISA Cybersecurity Advisory: Actively exploited vulnerability in edge devices",
+    "CISA Cybersecurity Advisory: Guidance for securing cloud environments",
+    "CISA Cybersecurity Advisory: Threat actor techniques and mitigations",
+    "CISA Cybersecurity Advisory: Malware indicators and defensive actions",
+    "CISA Cybersecurity Advisory: Protecting organizations from phishing",
 ]
-dump("acsc", [record("acsc", "advisory", digest(t), t, f"https://www.cyber.gov.au/about-us/view-all-content/alerts-and-advisories/{digest(t)}",
-                     ago(3 + i * 26), summary="Summary text from the ACSC advisory would appear here.", severity=s,
-                     tags=["australia", "acsc"]) for i, (t, s) in enumerate(acsc_titles)])
+dump("acsc", [record("acsc", "advisory", digest(t), t, f"https://www.cisa.gov/news-events/cybersecurity-advisories/{digest(t)}",
+                     ago(3 + i * 26), summary="Summary text from the CISA advisory would appear here.", severity="info",
+                     tags=["cisa", "united-states"]) for i, t in enumerate(cisa_titles)])
 
 # ThreatFox
 fams = ["Lumma Stealer", "RedLine Stealer", "Vidar", "StealC", "Cobalt Strike", "AsyncRAT", "Remcos", "QakBot", "Rhadamanthys", "XWorm"]

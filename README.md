@@ -5,7 +5,7 @@ End of semester project, RMIT Certificate IV in Cyber Security.
 
 ![dashboard](docs/dashboard.png)
 
-Live data from CISA KEV, NVD, FIRST EPSS, ACSC, abuse.ch ThreatFox and URLhaus, ransomware.live,
+Live data from CISA KEV and Cybersecurity Advisories, NVD, FIRST EPSS, abuse.ch ThreatFox and URLhaus, ransomware.live,
 MITRE ATT&CK and five security news wires, collected on a schedule by Python, enriched and scored,
 and served as a static page from a hardened Ubuntu server on AWS.
 

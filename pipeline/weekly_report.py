@@ -36,14 +36,14 @@ def main():
         f"# Weekly threat landscape summary",
         f"Generated {summary['generated']} covering the 7 days to {datetime.now(timezone.utc):%d %b %Y}.",
         f"\n**At a glance:** {summary['last_7d']['kev_added']} CVEs added to CISA KEV, "
-        f"{summary['last_7d']['acsc']} ACSC advisories, {summary['last_7d']['indicators']} new indicators "
+        f"{summary['last_7d']['acsc']} CISA advisories, {summary['last_7d']['indicators']} new indicators "
         f"({summary['last_7d']['infostealer_iocs']} infostealer), {summary['last_7d']['ransomware_victims']} "
         f"ransomware victims posted ({summary['last_7d']['anz_victims']} in Australia or New Zealand).",
         section("Newly exploited vulnerabilities (CISA KEV), by priority", kev,
                 lambda r: f"**{r['extra']['cve']}** {r['title'].split(' ', 1)[1]} "
                           f"(EPSS {r['extra'].get('epss', 'n/a')}, CVSS {r['extra'].get('cvss', 'n/a')}, "
                           f"patch by {r['extra'].get('due_date')}) {r['summary'][:140]}"),
-        section("ACSC alerts and advisories", acsc, lambda r: f"[{r['title']}]({r['url']})"),
+        section("CISA cybersecurity advisories", acsc, lambda r: f"[{r['title']}]({r['url']})"),
         section("Ransomware victims in Australia and New Zealand", anz,
                 lambda r: f"{r['extra']['group']} posted {r['extra']['victim']} ({r['extra'].get('sector') or 'sector unknown'})"),
         section("Top malware families by indicator volume", [{"k": k, "v": v} for k, v in summary["top_malware"]],

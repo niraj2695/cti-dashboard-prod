@@ -207,6 +207,9 @@ def main(argv=None):
                  "last_run": now_iso()}
         try:
             fresh = mod.collect(ctx)
+            if fid == "acsc":
+                # The feed source changed from ACSC to CISA; don't mix cached records from the old source.
+                records = [r for r in records if r["feed"] != fid or "cisa" in r.get("tags", [])]
             records = merge([r for r in records if r["feed"] != fid] + [r for r in records if r["feed"] == fid], fresh, fid)
             entry.update(status="ok", last_success=now_iso(), error=None,
                          count=sum(1 for r in records if r["feed"] == fid), fetched=len(fresh))

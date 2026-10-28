@@ -7,7 +7,7 @@ Verify every row in Week 1: open the URL, read the terms, record the date checke
 | kev | CISA KEV | JSON | 1 | 6h | no | US Gov, public domain | all catalogue fields | |
 | nvd | NIST NVD 2.0 | JSON API | 1 | 24h | optional | public domain | CVSS, description | |
 | epss | FIRST EPSS | JSON API | 1 | 24h | no | free with attribution | score, percentile | |
-| acsc | ACSC alerts and advisories | RSS | 1 | 1h | no | CC BY 4.0 (confirm) | title, link, summary, date | |
+| acsc | CISA Cybersecurity Advisories | RSS | 1 | 1h | no | U.S. Government public information (verify source terms) | title, link, summary, date | |
 | threatfox | abuse.ch ThreatFox | JSON API | 1 | 1h | yes | CC0 | ioc, type, family, confidence | |
 | urlhaus | abuse.ch URLhaus | JSON API | 1 | 1h | yes | CC0 | url, host, status, threat | |
 | ransomwarelive | ransomware.live | JSON API | 2 | 3h | no | non-commercial, attribution (confirm) | group, victim name as posted, country, sector, date | |
