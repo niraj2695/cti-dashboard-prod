@@ -112,6 +112,41 @@ def test_request_answer_uses_managed_identity_and_deployment(monkeypatch):
         },
     ]
     assert captured["json"]["max_output_tokens"] == 400
+    assert captured["json"]["reasoning"] == {"effort": "minimal"}
+
+
+def test_request_answer_logs_response_shape_when_foundry_returns_no_text(monkeypatch, caplog):
+    azure_module = types.ModuleType("azure")
+    identity_module = types.ModuleType("azure.identity")
+    identity_module.ManagedIdentityCredential = lambda: types.SimpleNamespace(
+        get_token=lambda scope: types.SimpleNamespace(token="managed-identity-token")
+    )
+    azure_module.identity = identity_module
+    monkeypatch.setitem(sys.modules, "azure", azure_module)
+    monkeypatch.setitem(sys.modules, "azure.identity", identity_module)
+    monkeypatch.setenv("AZURE_OPENAI_ENDPOINT", "https://example.services.ai.azure.com/openai/v1")
+    monkeypatch.setenv("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini")
+
+    class Response:
+        def raise_for_status(self):
+            pass
+
+        def json(self):
+            return {
+                "status": "incomplete",
+                "incomplete_details": {"reason": "max_output_tokens"},
+                "output": [{"type": "reasoning", "summary": []}],
+            }
+
+    monkeypatch.setattr(chat.requests, "post", lambda *args, **kwargs: Response())
+
+    with pytest.raises(chat.APIError) as error:
+        chat.request_answer("Question", {})
+
+    assert error.value.status == 502
+    assert "status=incomplete" in caplog.text
+    assert "max_output_tokens" in caplog.text
+    assert "reasoning" in caplog.text
 
 
 def test_request_answer_adds_foundry_api_path_when_endpoint_is_resource_root(monkeypatch):

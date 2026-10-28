@@ -214,18 +214,24 @@ def request_answer(question: str, context: dict, history: list[dict] | None = No
                 "instructions": instructions,
                 "input": input_messages,
                 "max_output_tokens": 400,
+                "reasoning": {"effort": "minimal"},
             },
             timeout=(5, 60),
         )
         response.raise_for_status()
         response_body = response.json()
-        answer = "\n".join(
-            item["text"]
-            for output in response_body["output"]
-            if output.get("type") == "message"
-            for item in output.get("content", [])
-            if item.get("type") == "output_text" and isinstance(item.get("text"), str)
-        )
+        answer_parts = []
+        for output in response_body.get("output", []):
+            if not isinstance(output, dict) or output.get("type") != "message":
+                continue
+            for item in output.get("content", []):
+                if not isinstance(item, dict):
+                    continue
+                if item.get("type") == "output_text" and isinstance(item.get("text"), str):
+                    answer_parts.append(item["text"])
+                elif item.get("type") == "refusal" and isinstance(item.get("refusal"), str):
+                    answer_parts.append(item["refusal"])
+        answer = "\n".join(answer_parts)
     except requests.RequestException as exc:
         log.error("Azure OpenAI request failed: %s", exc)
         raise APIError(502, "The AI service could not complete the request.") from exc
@@ -233,6 +239,25 @@ def request_answer(question: str, context: dict, history: list[dict] | None = No
         log.error("Azure OpenAI returned an invalid response")
         raise APIError(502, "The AI service returned an invalid response.") from exc
     if not isinstance(answer, str) or not answer.strip():
+        output = response_body.get("output", [])
+        output_shape = [
+            {
+                "type": item.get("type"),
+                "content_types": [
+                    content.get("type")
+                    for content in item.get("content", [])
+                    if isinstance(content, dict)
+                ],
+            }
+            for item in output
+            if isinstance(item, dict)
+        ] if isinstance(output, list) else type(output).__name__
+        log.error(
+            "Azure OpenAI returned no answer: status=%s incomplete_details=%s output_shape=%s",
+            response_body.get("status"),
+            response_body.get("incomplete_details"),
+            output_shape,
+        )
         raise APIError(502, "The AI service returned an empty response.")
     return answer.strip()
 
