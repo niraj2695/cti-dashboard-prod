@@ -21,8 +21,11 @@ install -m 644 "$APP/deploy/cti-collect.service" /etc/systemd/system/
 install -m 644 "$APP/deploy/cti-collect.timer"   /etc/systemd/system/
 install -m 644 "$APP/deploy/cti-report.service"  /etc/systemd/system/
 install -m 644 "$APP/deploy/cti-report.timer"    /etc/systemd/system/
+install -m 644 "$APP/deploy/cti-chat.service"    /etc/systemd/system/
 systemctl daemon-reload
 systemctl enable --now cti-collect.timer cti-report.timer
+systemctl enable --now cti-chat.service
+systemctl restart cti-chat.service
 
 echo "[4/5] nginx"
 install -m 644 "$APP/deploy/nginx.conf" /etc/nginx/sites-available/cti

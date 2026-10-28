@@ -1,15 +1,15 @@
-"""ACSC (cyber.gov.au) alerts and advisories RSS.
+"""CISA all-advisories RSS collector.
 
-The feed URL has moved more than once; verify it in Week 1 and update here.
+The legacy ``acsc`` feed id is retained for compatibility with existing data and UI.
 """
 from .base import get, load_sample, parse_rss, rss_to_records
 
 FEED = {
     "id": "acsc",
-    "name": "ACSC Advisories",
+    "name": "CISA All Advisories",
     "category": "advisory",
-    "url": "https://www.cyber.gov.au/rss/advisories",
-    "licence": "Commonwealth of Australia, CC BY 4.0 (verify on site)",
+    "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+    "licence": "U.S. Government public information; verify source terms",
     "interval_minutes": 60,
 }
 
@@ -18,9 +18,10 @@ def collect(ctx):
     if ctx.sample_mode:
         return load_sample(ctx, "acsc")
     xml = get(ctx, FEED["url"]).text
-    recs = rss_to_records("acsc", parse_rss(xml), rtype="advisory", severity="high", tags=["australia", "acsc"])
-    for r in recs:
-        t = r["title"].lower()
-        if t.startswith("alert") or "critical" in t:
-            r["severity"] = "critical"
-    return recs
+    return rss_to_records(
+        "acsc",
+        parse_rss(xml),
+        rtype="advisory",
+        severity="info",
+        tags=["cisa", "united-states"],
+    )

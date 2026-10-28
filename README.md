@@ -59,21 +59,27 @@ returns a list of records. The dashboard needs no change to show it in the panel
 
 Priority for vulnerabilities (refine this in Week 4): `50 if KEV + 40 * EPSS + CVSS + 10 if ransomware`.
 
-## Server deployment (AWS EC2, Ubuntu 24.04)
+## Server deployment (Ubuntu 24.04 VM)
 
 ```bash
 # on a fresh instance, as root
 sudo bash deploy/harden.sh <admin-user> "<ssh public key>"      # ADMIN_CIDRS="x.x.x.x/32" to lock SSH down
 # as the admin user
 sudo git clone <this repo> /srv/cti/checkout && cd /srv/cti/checkout
-sudo nano /etc/cti/env                                           # add keys
-sudo bash deploy/install.sh                                      # venv, systemd timers, nginx, first run
-sudo certbot --nginx -d dashboard.example.edu.au                 # TLS
+sudo nano /etc/cti/env                                           # feed keys and Azure OpenAI endpoint/deployment
+sudo bash deploy/install.sh                                      # venv, services, nginx, first collection
+sudo certbot --nginx -d dashboard.example.edu.au                 # enable HTTPS before using public chat
 ```
 
-Security group: inbound 443 from anywhere, 80 from anywhere (certbot), 22 from your IP ranges only.
+For Azure, allow inbound 443 and 80 in the VM's Network Security Group, and restrict 22 to your IP ranges.
 The pipeline runs as the unprivileged `cti` user under systemd with `ProtectSystem=strict`, writing
 only to `/srv/cti/data`. Nginx serves `web/` and exposes `/srv/cti/data` read-only at `/data/`.
+The chat API runs on localhost, requires HTTPS, is publicly accessible without sign-in, and uses the VM's system-assigned
+managed identity to access Azure OpenAI. Assign that identity the `Cognitive Services OpenAI User` role
+on the Azure OpenAI resource. Chat settings are `AZURE_OPENAI_ENDPOINT` and `AZURE_OPENAI_DEPLOYMENT`
+in `/etc/cti/env`; no Azure OpenAI key is put in the browser or repository. Nginx limits aggregate
+chat usage to five requests per minute and one active request to reduce unexpected model usage. Since
+chat is public, monitor usage and costs closely.
 
 Pushing to `main` runs the tests and, if they pass, deploys over SSH (see `.github/workflows/ci.yml`;
 set `DEPLOY_HOST`, `DEPLOY_USER`, `DEPLOY_SSH_KEY` as repository secrets).

@@ -29,45 +29,59 @@
 <section class="tiles" id="tiles"></section>
 
 <main class="grid">
-  <article class="panel" id="p-kev" data-feed="kev">
-    <h2>Exploited vulnerabilities <small>CISA KEV · EPSS · NVD</small><span class="fresh"></span></h2>
-    <div class="body"></div>
+  <article class="panel" id="p-chat">
+    <h2>CTI assistant <small>Azure OpenAI · read-only</small></h2>
+    <div class="chat-answer" id="chatAnswer" aria-live="polite"></div>
+    <div class="chat-sources" id="chatSources"></div>
+    <p class="chat-status" id="chatStatus" aria-live="polite"></p>
+    <form class="chat-form" id="chatForm">
+      <label class="sr-only" for="chatQuestion">Ask about dashboard threat intelligence</label>
+      <input id="chatQuestion" maxlength="1000" placeholder="Ask about vulnerabilities, indicators, or feed health" required>
+      <button id="chatSend" type="submit">Ask</button>
+    </form>
   </article>
 
-  <article class="panel" id="p-acsc" data-feed="acsc">
-    <h2>CISA advisories <small>Cybersecurity Advisories</small><span class="fresh"></span></h2>
-    <div class="body"></div>
-  </article>
+  <section class="dashboard-panels" aria-label="Threat intelligence dashboard">
+    <article class="panel" id="p-kev" data-feed="kev">
+      <h2>Exploited vulnerabilities <small>CISA KEV · EPSS · NVD</small><span class="fresh"></span></h2>
+      <div class="body"></div>
+    </article>
 
-  <article class="panel" id="p-ransom" data-feed="ransomwarelive">
-    <h2>Ransomware victims <small>ransomware.live · AU/NZ first</small><span class="fresh"></span></h2>
-    <div class="body"></div>
-  </article>
+    <article class="panel" id="p-acsc" data-feed="acsc">
+      <h2>CISA advisories <small>All Advisories</small><span class="fresh"></span></h2>
+      <div class="body"></div>
+    </article>
 
-  <article class="panel" id="p-stealer" data-feed="threatfox">
-    <h2>Infostealer activity <small>ThreatFox · metadata only</small><span class="fresh"></span></h2>
-    <div class="body"></div>
-  </article>
+    <article class="panel" id="p-ransom" data-feed="ransomwarelive">
+      <h2>Ransomware victims <small>ransomware.live · AU/NZ first</small><span class="fresh"></span></h2>
+      <div class="body"></div>
+    </article>
 
-  <article class="panel" id="p-ioc" data-feed="urlhaus">
-    <h2>Malware infrastructure <small>ThreatFox · URLhaus</small><span class="fresh"></span></h2>
-    <div class="body"></div>
-  </article>
+    <article class="panel" id="p-stealer" data-feed="threatfox">
+      <h2>Infostealer activity <small>ThreatFox · metadata only</small><span class="fresh"></span></h2>
+      <div class="body"></div>
+    </article>
 
-  <article class="panel" id="p-attack" data-feed="attack">
-    <h2>Tracked groups and techniques <small>MITRE ATT&amp;CK</small><span class="fresh"></span></h2>
-    <div class="body"></div>
-  </article>
+    <article class="panel" id="p-ioc" data-feed="urlhaus">
+      <h2>Malware infrastructure <small>ThreatFox · URLhaus</small><span class="fresh"></span></h2>
+      <div class="body"></div>
+    </article>
 
-  <article class="panel wide" id="p-news" data-feed="news">
-    <h2>News wire <small>BleepingComputer · THN · The Record · Krebs · SecurityWeek</small><span class="fresh"></span></h2>
-    <div class="body"></div>
-  </article>
+    <article class="panel" id="p-attack" data-feed="attack">
+      <h2>Tracked groups and techniques <small>MITRE ATT&amp;CK</small><span class="fresh"></span></h2>
+      <div class="body"></div>
+    </article>
 
-  <article class="panel wide" id="p-health">
-    <h2>Feed health <small>meta.json</small></h2>
-    <div class="body"></div>
-  </article>
+    <article class="panel wide" id="p-news" data-feed="news">
+      <h2>News wire <small>BleepingComputer · THN · The Record · Krebs · SecurityWeek</small><span class="fresh"></span></h2>
+      <div class="body"></div>
+    </article>
+
+    <article class="panel wide" id="p-health">
+      <h2>Feed health <small>meta.json</small></h2>
+      <div class="body"></div>
+    </article>
+  </section>
 </main>
 
 <footer>

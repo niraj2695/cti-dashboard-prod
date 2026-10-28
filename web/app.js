@@ -8,6 +8,64 @@
   let records = [], meta = {}, summary = {}, attack = { techniques: {}, groups: {} };
   let query = "", sev = "";
 
+  const chatStatus = (message) => { $("#chatStatus").textContent = message; };
+  const addChatSources = (container, sources) => {
+    container.replaceChildren();
+    if (!sources.length) return;
+    const heading = document.createElement("strong");
+    heading.textContent = "Dashboard sources";
+    container.append(heading);
+    sources.forEach((source) => {
+      try {
+        const url = new URL(source.url);
+        if (url.protocol !== "https:") return;
+        const link = document.createElement("a");
+        link.href = url.href;
+        link.target = "_blank";
+        link.rel = "noopener";
+        link.textContent = `${source.title} (${source.feed}, ${source.published})`;
+        container.append(link);
+      } catch {
+        // Ignore invalid source URLs from feed data.
+      }
+    });
+  };
+
+  if (location.protocol !== "https:") {
+    chatStatus("Chat requires HTTPS. Configure a domain and TLS to use the assistant.");
+  }
+  $("#chatForm").addEventListener("submit", async (event) => {
+    event.preventDefault();
+    if (location.protocol !== "https:") {
+      chatStatus("Chat is available only over HTTPS.");
+      return;
+    }
+    const questionInput = $("#chatQuestion");
+    const question = questionInput.value.trim();
+    if (!question) return;
+    const sendButton = $("#chatSend");
+    sendButton.disabled = true;
+    chatStatus("Asking the assistant…");
+    $("#chatAnswer").textContent = "";
+    try {
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ question }),
+      });
+      const payload = await response.json();
+      if (!response.ok) throw new Error(payload.error || `Request failed (${response.status}).`);
+      $("#chatAnswer").textContent = payload.answer;
+      addChatSources($("#chatSources"), payload.sources || []);
+      chatStatus(payload.generated ? `Dashboard snapshot: ${payload.generated}` : "");
+      questionInput.value = "";
+    } catch (error) {
+      chatStatus(error.message || "Chat request failed.");
+    } finally {
+      sendButton.disabled = false;
+    }
+  });
+
   const ago = (iso) => {
     if (!iso) return "never";
     const m = Math.round((Date.now() - new Date(iso)) / 60000);

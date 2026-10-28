@@ -6,7 +6,7 @@
   "title": "domain: login-606.shop",
   "summary": "StealC (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300000/",
-  "published": "2026-10-27T16:21:20Z",
+  "published": "2026-10-27T17:41:52Z",
   "severity": "medium",
   "tags": [
    "StealC",
@@ -31,7 +31,7 @@
   "title": "domain: secure-140.top",
   "summary": "Remcos (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300001/",
-  "published": "2026-10-24T12:23:07Z",
+  "published": "2026-10-24T13:43:39Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -55,7 +55,7 @@
   "title": "sha256_hash: da4b9237bacccdf1da4b9237bacccdf1da4b9237bacccdf1da4b9237bacccdf1",
   "summary": "XWorm (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300002/",
-  "published": "2026-10-22T13:42:15Z",
+  "published": "2026-10-22T15:02:47Z",
   "severity": "high",
   "tags": [
    "XWorm",
@@ -79,7 +79,7 @@
   "title": "ip:port: 123.181.86.157:443",
   "summary": "AsyncRAT (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300003/",
-  "published": "2026-10-25T19:43:21Z",
+  "published": "2026-10-25T21:03:53Z",
   "severity": "high",
   "tags": [
    "AsyncRAT",
@@ -103,7 +103,7 @@
   "title": "ip:port: 47.229.205.141:4444",
   "summary": "QakBot (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300004/",
-  "published": "2026-10-21T21:50:44Z",
+  "published": "2026-10-21T23:11:16Z",
   "severity": "high",
   "tags": [
    "QakBot",
@@ -127,7 +127,7 @@
   "title": "domain: cdn-112.icu",
   "summary": "Remcos (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300005/",
-  "published": "2026-10-28T10:32:03Z",
+  "published": "2026-10-28T11:52:35Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -151,7 +151,7 @@
   "title": "url: https://files-60.xyz/update.exe",
   "summary": "Remcos (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300006/",
-  "published": "2026-10-25T06:23:03Z",
+  "published": "2026-10-25T07:43:35Z",
   "severity": "medium",
   "tags": [
    "Remcos",
@@ -175,7 +175,7 @@
   "title": "ip:port: 53.34.106.113:8080",
   "summary": "Remcos (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300007/",
-  "published": "2026-10-24T21:35:47Z",
+  "published": "2026-10-24T22:56:19Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -199,7 +199,7 @@
   "title": "ip:port: 23.106.192.39:4444",
   "summary": "AsyncRAT (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300008/",
-  "published": "2026-10-21T20:47:14Z",
+  "published": "2026-10-21T22:07:46Z",
   "severity": "high",
   "tags": [
    "AsyncRAT",
@@ -223,7 +223,7 @@
   "title": "sha256_hash: 0ade7c2cf97f75d00ade7c2cf97f75d00ade7c2cf97f75d00ade7c2cf97f75d0",
   "summary": "QakBot (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300009/",
-  "published": "2026-10-27T02:27:19Z",
+  "published": "2026-10-27T03:47:51Z",
   "severity": "medium",
   "tags": [
    "QakBot",
@@ -247,7 +247,7 @@
   "title": "url: https://files-31.xyz/setup.exe",
   "summary": "Rhadamanthys (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300010/",
-  "published": "2026-10-24T05:40:29Z",
+  "published": "2026-10-24T07:01:01Z",
   "severity": "high",
   "tags": [
    "Rhadamanthys",
@@ -272,7 +272,7 @@
   "title": "domain: cdn-630.icu",
   "summary": "XWorm (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300011/",
-  "published": "2026-10-25T07:51:53Z",
+  "published": "2026-10-25T09:12:25Z",
   "severity": "high",
   "tags": [
    "XWorm",
@@ -296,7 +296,7 @@
   "title": "url: https://files-35.xyz/setup.exe",
   "summary": "StealC (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300012/",
-  "published": "2026-10-24T07:38:55Z",
+  "published": "2026-10-24T08:59:27Z",
   "severity": "high",
   "tags": [
    "StealC",
@@ -321,7 +321,7 @@
   "title": "ip:port: 127.176.43.214:443",
   "summary": "XWorm (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300013/",
-  "published": "2026-10-27T21:21:02Z",
+  "published": "2026-10-27T22:41:34Z",
   "severity": "high",
   "tags": [
    "XWorm",
@@ -345,7 +345,7 @@
   "title": "sha256_hash: fa35e192121eabf3fa35e192121eabf3fa35e192121eabf3fa35e192121eabf3",
   "summary": "Remcos (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300014/",
-  "published": "2026-10-24T02:21:10Z",
+  "published": "2026-10-24T03:41:42Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -369,7 +369,7 @@
   "title": "domain: login-867.xyz",
   "summary": "AsyncRAT (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300015/",
-  "published": "2026-10-26T19:01:10Z",
+  "published": "2026-10-26T20:21:42Z",
   "severity": "medium",
   "tags": [
    "AsyncRAT",
@@ -393,7 +393,7 @@
   "title": "domain: cdn-162.shop",
   "summary": "Cobalt Strike (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300016/",
-  "published": "2026-10-24T22:21:40Z",
+  "published": "2026-10-24T23:42:12Z",
   "severity": "high",
   "tags": [
    "Cobalt Strike",
@@ -417,7 +417,7 @@
   "title": "ip:port: 117.93.2.199:8080",
   "summary": "Rhadamanthys (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300017/",
-  "published": "2026-10-26T07:11:35Z",
+  "published": "2026-10-26T08:32:07Z",
   "severity": "medium",
   "tags": [
    "Rhadamanthys",
@@ -442,7 +442,7 @@
   "title": "sha256_hash: 9e6a55b6b4563e659e6a55b6b4563e659e6a55b6b4563e659e6a55b6b4563e65",
   "summary": "Rhadamanthys (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300018/",
-  "published": "2026-10-23T09:58:06Z",
+  "published": "2026-10-23T11:18:38Z",
   "severity": "medium",
   "tags": [
    "Rhadamanthys",
@@ -467,7 +467,7 @@
   "title": "sha256_hash: b3f0c7f6bb763af1b3f0c7f6bb763af1b3f0c7f6bb763af1b3f0c7f6bb763af1",
   "summary": "RedLine Stealer (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300019/",
-  "published": "2026-10-25T16:44:01Z",
+  "published": "2026-10-25T18:04:33Z",
   "severity": "high",
   "tags": [
    "RedLine Stealer",
@@ -492,7 +492,7 @@
   "title": "sha256_hash: 91032ad7bbcb6cf791032ad7bbcb6cf791032ad7bbcb6cf791032ad7bbcb6cf7",
   "summary": "Remcos (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300020/",
-  "published": "2026-10-27T12:22:55Z",
+  "published": "2026-10-27T13:43:27Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -516,7 +516,7 @@
   "title": "sha256_hash: 472b07b9fcf2c245472b07b9fcf2c245472b07b9fcf2c245472b07b9fcf2c245",
   "summary": "Vidar (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300021/",
-  "published": "2026-10-26T05:05:53Z",
+  "published": "2026-10-26T06:26:25Z",
   "severity": "high",
   "tags": [
    "Vidar",
@@ -541,7 +541,7 @@
   "title": "url: https://files-12.xyz/update.exe",
   "summary": "StealC (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300022/",
-  "published": "2026-10-25T01:28:53Z",
+  "published": "2026-10-25T02:49:25Z",
   "severity": "high",
   "tags": [
    "StealC",
@@ -566,7 +566,7 @@
   "title": "ip:port: 206.117.53.22:4444",
   "summary": "RedLine Stealer (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300023/",
-  "published": "2026-10-25T18:26:18Z",
+  "published": "2026-10-25T19:46:50Z",
   "severity": "high",
   "tags": [
    "RedLine Stealer",
@@ -591,7 +591,7 @@
   "title": "sha256_hash: 4d134bc072212ace4d134bc072212ace4d134bc072212ace4d134bc072212ace",
   "summary": "Rhadamanthys (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300024/",
-  "published": "2026-10-23T03:19:39Z",
+  "published": "2026-10-23T04:40:11Z",
   "severity": "medium",
   "tags": [
    "Rhadamanthys",
@@ -616,7 +616,7 @@
   "title": "domain: api-666.icu",
   "summary": "RedLine Stealer (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300025/",
-  "published": "2026-10-22T05:33:22Z",
+  "published": "2026-10-22T06:53:54Z",
   "severity": "high",
   "tags": [
    "RedLine Stealer",
@@ -641,7 +641,7 @@
   "title": "url: https://files-47.xyz/invoice.exe",
   "summary": "Vidar (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300026/",
-  "published": "2026-10-26T16:02:20Z",
+  "published": "2026-10-26T17:22:52Z",
   "severity": "high",
   "tags": [
    "Vidar",
@@ -666,7 +666,7 @@
   "title": "url: https://files-67.top/invoice.exe",
   "summary": "Lumma Stealer (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300027/",
-  "published": "2026-10-24T02:28:26Z",
+  "published": "2026-10-24T03:48:58Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -691,7 +691,7 @@
   "title": "sha256_hash: 0a57cb53ba59c46f0a57cb53ba59c46f0a57cb53ba59c46f0a57cb53ba59c46f",
   "summary": "Rhadamanthys (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300028/",
-  "published": "2026-10-28T08:54:48Z",
+  "published": "2026-10-28T10:15:20Z",
   "severity": "high",
   "tags": [
    "Rhadamanthys",
@@ -716,7 +716,7 @@
   "title": "sha256_hash: 7719a1c782a1ba917719a1c782a1ba917719a1c782a1ba917719a1c782a1ba91",
   "summary": "Cobalt Strike (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300029/",
-  "published": "2026-10-28T03:58:18Z",
+  "published": "2026-10-28T05:18:50Z",
   "severity": "high",
   "tags": [
    "Cobalt Strike",
@@ -740,7 +740,7 @@
   "title": "domain: api-660.shop",
   "summary": "Vidar (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300030/",
-  "published": "2026-10-26T02:18:43Z",
+  "published": "2026-10-26T03:39:15Z",
   "severity": "high",
   "tags": [
    "Vidar",
@@ -765,7 +765,7 @@
   "title": "url: https://files-21.xyz/setup.exe",
   "summary": "Lumma Stealer (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300031/",
-  "published": "2026-10-25T19:27:54Z",
+  "published": "2026-10-25T20:48:26Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -790,7 +790,7 @@
   "title": "sha256_hash: cb4e5208b4cd8726cb4e5208b4cd8726cb4e5208b4cd8726cb4e5208b4cd8726",
   "summary": "Lumma Stealer (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300032/",
-  "published": "2026-10-27T11:20:52Z",
+  "published": "2026-10-27T12:41:24Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -815,7 +815,7 @@
   "title": "domain: login-917.xyz",
   "summary": "XWorm (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300033/",
-  "published": "2026-10-24T05:33:59Z",
+  "published": "2026-10-24T06:54:31Z",
   "severity": "high",
   "tags": [
    "XWorm",
@@ -839,7 +839,7 @@
   "title": "sha256_hash: f1f836cb4ea6efb2f1f836cb4ea6efb2f1f836cb4ea6efb2f1f836cb4ea6efb2",
   "summary": "RedLine Stealer (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300034/",
-  "published": "2026-10-23T03:57:16Z",
+  "published": "2026-10-23T05:17:48Z",
   "severity": "high",
   "tags": [
    "RedLine Stealer",
@@ -864,7 +864,7 @@
   "title": "ip:port: 173.33.242.65:443",
   "summary": "Rhadamanthys (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300035/",
-  "published": "2026-10-27T22:56:50Z",
+  "published": "2026-10-28T00:17:22Z",
   "severity": "high",
   "tags": [
    "Rhadamanthys",
@@ -889,7 +889,7 @@
   "title": "ip:port: 162.101.39.154:8080",
   "summary": "Cobalt Strike (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300036/",
-  "published": "2026-10-28T01:30:42Z",
+  "published": "2026-10-28T02:51:14Z",
   "severity": "high",
   "tags": [
    "Cobalt Strike",
@@ -913,7 +913,7 @@
   "title": "ip:port: 182.111.250.75:4444",
   "summary": "Cobalt Strike (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300037/",
-  "published": "2026-10-22T05:51:16Z",
+  "published": "2026-10-22T07:11:48Z",
   "severity": "medium",
   "tags": [
    "Cobalt Strike",
@@ -937,7 +937,7 @@
   "title": "url: https://files-84.top/setup.exe",
   "summary": "Lumma Stealer (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300038/",
-  "published": "2026-10-22T03:13:30Z",
+  "published": "2026-10-22T04:34:02Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -962,7 +962,7 @@
   "title": "url: https://files-10.xyz/invoice.exe",
   "summary": "Vidar (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300039/",
-  "published": "2026-10-25T18:31:22Z",
+  "published": "2026-10-25T19:51:54Z",
   "severity": "high",
   "tags": [
    "Vidar",
@@ -987,7 +987,7 @@
   "title": "sha256_hash: af3e133428b9e25caf3e133428b9e25caf3e133428b9e25caf3e133428b9e25c",
   "summary": "Vidar (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300040/",
-  "published": "2026-10-22T11:23:14Z",
+  "published": "2026-10-22T12:43:46Z",
   "severity": "medium",
   "tags": [
    "Vidar",
@@ -1012,7 +1012,7 @@
   "title": "url: https://files-16.xyz/setup.exe",
   "summary": "Cobalt Strike (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300041/",
-  "published": "2026-10-22T22:03:23Z",
+  "published": "2026-10-22T23:23:55Z",
   "severity": "medium",
   "tags": [
    "Cobalt Strike",
@@ -1036,7 +1036,7 @@
   "title": "domain: cdn-891.shop",
   "summary": "Cobalt Strike (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300042/",
-  "published": "2026-10-22T09:29:46Z",
+  "published": "2026-10-22T10:50:18Z",
   "severity": "high",
   "tags": [
    "Cobalt Strike",
@@ -1060,7 +1060,7 @@
   "title": "domain: secure-729.xyz",
   "summary": "Rhadamanthys (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300043/",
-  "published": "2026-10-22T09:44:18Z",
+  "published": "2026-10-22T11:04:50Z",
   "severity": "medium",
   "tags": [
    "Rhadamanthys",
@@ -1085,7 +1085,7 @@
   "title": "domain: api-361.shop",
   "summary": "Rhadamanthys (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300044/",
-  "published": "2026-10-24T18:17:40Z",
+  "published": "2026-10-24T19:38:12Z",
   "severity": "high",
   "tags": [
    "Rhadamanthys",
@@ -1110,7 +1110,7 @@
   "title": "ip:port: 47.82.38.54:2404",
   "summary": "Remcos (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300045/",
-  "published": "2026-10-24T19:48:55Z",
+  "published": "2026-10-24T21:09:27Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -1134,7 +1134,7 @@
   "title": "ip:port: 49.175.46.82:8080",
   "summary": "StealC (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300046/",
-  "published": "2026-10-23T12:13:32Z",
+  "published": "2026-10-23T13:34:04Z",
   "severity": "high",
   "tags": [
    "StealC",
@@ -1159,7 +1159,7 @@
   "title": "sha256_hash: 827bfc458708f0b4827bfc458708f0b4827bfc458708f0b4827bfc458708f0b4",
   "summary": "StealC (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300047/",
-  "published": "2026-10-22T12:08:57Z",
+  "published": "2026-10-22T13:29:29Z",
   "severity": "high",
   "tags": [
    "StealC",
@@ -1184,7 +1184,7 @@
   "title": "sha256_hash: 64e095fe763fc62464e095fe763fc62464e095fe763fc62464e095fe763fc624",
   "summary": "Remcos (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300048/",
-  "published": "2026-10-28T11:09:31Z",
+  "published": "2026-10-28T12:30:03Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -1208,7 +1208,7 @@
   "title": "sha256_hash: 2e01e17467891f7c2e01e17467891f7c2e01e17467891f7c2e01e17467891f7c",
   "summary": "Remcos (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300049/",
-  "published": "2026-10-28T10:58:09Z",
+  "published": "2026-10-28T12:18:41Z",
   "severity": "medium",
   "tags": [
    "Remcos",
@@ -1232,7 +1232,7 @@
   "title": "domain: api-640.icu",
   "summary": "Vidar (botnet C2) confidence 50%",
   "url": "https://threatfox.abuse.ch/ioc/1300050/",
-  "published": "2026-10-26T11:16:53Z",
+  "published": "2026-10-26T12:37:25Z",
   "severity": "medium",
   "tags": [
    "Vidar",
@@ -1257,7 +1257,7 @@
   "title": "domain: update-650.shop",
   "summary": "XWorm (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300051/",
-  "published": "2026-10-25T07:22:34Z",
+  "published": "2026-10-25T08:43:06Z",
   "severity": "high",
   "tags": [
    "XWorm",
@@ -1281,7 +1281,7 @@
   "title": "domain: cdn-610.icu",
   "summary": "StealC (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300052/",
-  "published": "2026-10-22T07:37:26Z",
+  "published": "2026-10-22T08:57:58Z",
   "severity": "high",
   "tags": [
    "StealC",
@@ -1306,7 +1306,7 @@
   "title": "sha256_hash: c5b76da3e608d34ec5b76da3e608d34ec5b76da3e608d34ec5b76da3e608d34e",
   "summary": "StealC (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300053/",
-  "published": "2026-10-22T00:29:41Z",
+  "published": "2026-10-22T01:50:13Z",
   "severity": "high",
   "tags": [
    "StealC",
@@ -1331,7 +1331,7 @@
   "title": "domain: update-738.icu",
   "summary": "Cobalt Strike (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300054/",
-  "published": "2026-10-25T16:40:16Z",
+  "published": "2026-10-25T18:00:48Z",
   "severity": "high",
   "tags": [
    "Cobalt Strike",
@@ -1355,7 +1355,7 @@
   "title": "domain: secure-153.top",
   "summary": "Lumma Stealer (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300055/",
-  "published": "2026-10-23T14:19:04Z",
+  "published": "2026-10-23T15:39:36Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -1380,7 +1380,7 @@
   "title": "domain: update-419.icu",
   "summary": "RedLine Stealer (botnet C2) confidence 75%",
   "url": "https://threatfox.abuse.ch/ioc/1300056/",
-  "published": "2026-10-27T17:48:30Z",
+  "published": "2026-10-27T19:09:02Z",
   "severity": "high",
   "tags": [
    "RedLine Stealer",
@@ -1405,7 +1405,7 @@
   "title": "url: https://files-58.xyz/update.exe",
   "summary": "RedLine Stealer (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300057/",
-  "published": "2026-10-27T21:11:22Z",
+  "published": "2026-10-27T22:31:54Z",
   "severity": "high",
   "tags": [
    "RedLine Stealer",
@@ -1430,7 +1430,7 @@
   "title": "domain: secure-131.icu",
   "summary": "QakBot (botnet C2) confidence 100%",
   "url": "https://threatfox.abuse.ch/ioc/1300058/",
-  "published": "2026-10-28T05:37:40Z",
+  "published": "2026-10-28T06:58:12Z",
   "severity": "high",
   "tags": [
    "QakBot",
@@ -1454,7 +1454,7 @@
   "title": "ip:port: 70.99.32.231:4444",
   "summary": "RedLine Stealer (botnet C2) confidence 90%",
   "url": "https://threatfox.abuse.ch/ioc/1300059/",
-  "published": "2026-10-22T07:46:22Z",
+  "published": "2026-10-22T09:06:54Z",
   "severity": "high",
   "tags": [
    "RedLine Stealer",
