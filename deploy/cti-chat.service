@@ -1,0 +1,22 @@
+[Unit]
+Description=CTI dashboard AI chat API
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=cti
+Group=cti
+WorkingDirectory=/srv/cti/app
+EnvironmentFile=/etc/cti/env
+ExecStart=/srv/cti/app/.venv/bin/python -m api.chat
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+
+[Install]
+WantedBy=multi-user.target
