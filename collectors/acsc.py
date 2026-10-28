@@ -8,7 +8,7 @@ FEED = {
     "id": "acsc",
     "name": "ACSC Alerts and Advisories",
     "category": "advisory",
-    "url": "https://www.cyber.gov.au/rss/alerts-and-advisories",
+    "url": "https://www.cisa.gov/cybersecurity-advisories/cybersecurity-advisories.xml",
     "licence": "Commonwealth of Australia, CC BY 4.0 (verify on site)",
     "interval_minutes": 60,
 }
