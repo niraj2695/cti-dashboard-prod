@@ -7,7 +7,7 @@ FEED = {
     "category": "vulnerability",
     "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
     "licence": "US Government work, public domain",
-    "interval_minutes": 60,
+    "interval_minutes": 360,
 }
 
 
