@@ -70,7 +70,7 @@ The pipeline:
 2. Runs due feeds (or the selected/forced feeds), records feed health, and merges results using `(feed, id)` as the deduplication key.
 3. Preserves `first_seen` when a refreshed record replaces an existing record.
 4. Enriches CVE records using EPSS and NVD data, refreshes ATT&CK reference data, and calculates a vulnerability priority score.
-5. Prunes records according to type-specific retention, except KEV records, and caps stored records at 5,000.
+5. Prunes records according to type-specific retention, except KEV records, and caps stored records at 10,000 so core dashboard feeds are less likely to be crowded out.
 6. Writes `records.json`, `meta.json`, and `summary.json` using temporary files followed by atomic replacement.
 
 The canonical record format and feed-specific metadata are documented in `docs/schema.md`. Important outputs are:

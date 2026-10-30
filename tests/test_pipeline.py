@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from collectors.base import parse_date, parse_rss, strip_html  # noqa: E402
+from pipeline import run as pipeline_run  # noqa: E402
 
 
 @pytest.fixture(scope="session")
@@ -48,6 +49,26 @@ def test_sorted_newest_first(data):
     recs = json.loads((data / "records.json").read_text())
     pubs = [r["published"] for r in recs]
     assert pubs == sorted(pubs, reverse=True)
+
+
+def test_prune_keeps_older_dashboard_feed_records_within_cap():
+    now = pipeline_run.datetime.now(pipeline_run.timezone.utc)
+    recent = (now - pipeline_run.timedelta(days=1)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    old_kev = (now - pipeline_run.timedelta(days=400)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    records = [
+        {"type": "news", "published": recent, "extra": {}}
+        for _ in range(5000)
+    ]
+    records.extend([
+        {"feed": "kev", "type": "vulnerability", "published": old_kev, "extra": {"kev": True}},
+        {"feed": "acsc", "type": "advisory", "published": recent, "extra": {}},
+        {"feed": "ransomwarelive", "type": "incident", "published": recent, "extra": {}},
+    ])
+
+    kept = pipeline_run.prune(records)
+
+    assert len(kept) == len(records)
+    assert {record.get("feed") for record in kept} >= {"kev", "acsc", "ransomwarelive"}
 
 
 def test_kev_enriched(data):

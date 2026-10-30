@@ -25,4 +25,4 @@ Every collector returns records in this shape. The pipeline adds `first_seen` an
 
 ## Retention
 
-indicator 14 days, news 30, incident 90, advisory 180, vulnerability 365 (KEV entries are never pruned). Cap 5000 records.
+indicator 14 days, news 30, incident 90, advisory 180, vulnerability 365 (KEV entries are never age-pruned). Maximum 10,000 records, newest first; records past the cap can still be omitted.

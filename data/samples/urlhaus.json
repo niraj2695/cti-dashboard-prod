@@ -6,7 +6,7 @@
   "title": "URL: cdn1.drop-zone.icu",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400000/",
-  "published": "2026-10-25T20:47:37Z",
+  "published": "2026-10-27T08:29:47Z",
   "severity": "medium",
   "tags": [
    "Amadey",
@@ -28,7 +28,7 @@
   "title": "URL: dl30.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400001/",
-  "published": "2026-10-26T10:39:18Z",
+  "published": "2026-10-27T22:21:28Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -50,7 +50,7 @@
   "title": "URL: cdn56.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400002/",
-  "published": "2026-10-25T19:59:26Z",
+  "published": "2026-10-27T07:41:36Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -72,7 +72,7 @@
   "title": "URL: cdn89.example-host.top",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400003/",
-  "published": "2026-10-27T19:44:08Z",
+  "published": "2026-10-29T07:26:18Z",
   "severity": "medium",
   "tags": [
    "Remcos",
@@ -94,7 +94,7 @@
   "title": "URL: cdn77.example-host.top",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400004/",
-  "published": "2026-10-27T22:24:53Z",
+  "published": "2026-10-29T10:07:03Z",
   "severity": "medium",
   "tags": [
    "Lumma Stealer",
@@ -116,7 +116,7 @@
   "title": "URL: mirror9.drop-zone.icu",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400005/",
-  "published": "2026-10-27T02:47:34Z",
+  "published": "2026-10-28T14:29:44Z",
   "severity": "high",
   "tags": [
    "Amadey",
@@ -138,7 +138,7 @@
   "title": "URL: get55.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400006/",
-  "published": "2026-10-27T17:45:07Z",
+  "published": "2026-10-29T05:27:17Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -160,7 +160,7 @@
   "title": "URL: dl54.files-store.xyz",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400007/",
-  "published": "2026-10-25T16:57:12Z",
+  "published": "2026-10-27T04:39:22Z",
   "severity": "medium",
   "tags": [
    "Lumma Stealer",
@@ -182,7 +182,7 @@
   "title": "URL: get54.files-store.xyz",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400008/",
-  "published": "2026-10-25T22:31:56Z",
+  "published": "2026-10-27T10:14:06Z",
   "severity": "medium",
   "tags": [
    "Lumma Stealer",
@@ -204,7 +204,7 @@
   "title": "URL: dl38.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400009/",
-  "published": "2026-10-26T20:54:52Z",
+  "published": "2026-10-28T08:37:02Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -226,7 +226,7 @@
   "title": "URL: cdn26.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400010/",
-  "published": "2026-10-27T23:12:49Z",
+  "published": "2026-10-29T10:54:59Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -248,7 +248,7 @@
   "title": "URL: cdn75.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400011/",
-  "published": "2026-10-28T07:33:28Z",
+  "published": "2026-10-29T19:15:38Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -270,7 +270,7 @@
   "title": "URL: get84.example-host.top",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400012/",
-  "published": "2026-10-27T04:01:09Z",
+  "published": "2026-10-28T15:43:19Z",
   "severity": "medium",
   "tags": [
    "Lumma Stealer",
@@ -292,7 +292,7 @@
   "title": "URL: dl61.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400013/",
-  "published": "2026-10-25T20:56:15Z",
+  "published": "2026-10-27T08:38:25Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -314,7 +314,7 @@
   "title": "URL: get16.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400014/",
-  "published": "2026-10-26T18:35:43Z",
+  "published": "2026-10-28T06:17:53Z",
   "severity": "high",
   "tags": [
    "Amadey",
@@ -336,7 +336,7 @@
   "title": "URL: dl48.drop-zone.icu",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400015/",
-  "published": "2026-10-27T05:02:26Z",
+  "published": "2026-10-28T16:44:36Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -358,7 +358,7 @@
   "title": "URL: dl14.drop-zone.icu",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400016/",
-  "published": "2026-10-26T11:03:35Z",
+  "published": "2026-10-27T22:45:45Z",
   "severity": "medium",
   "tags": [
    "Remcos",
@@ -380,7 +380,7 @@
   "title": "URL: dl48.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400017/",
-  "published": "2026-10-28T08:58:55Z",
+  "published": "2026-10-29T20:41:05Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -402,7 +402,7 @@
   "title": "URL: get2.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400018/",
-  "published": "2026-10-26T13:13:31Z",
+  "published": "2026-10-28T00:55:41Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -424,7 +424,7 @@
   "title": "URL: cdn10.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400019/",
-  "published": "2026-10-26T05:09:18Z",
+  "published": "2026-10-27T16:51:28Z",
   "severity": "high",
   "tags": [
    "Amadey",
@@ -446,7 +446,7 @@
   "title": "URL: dl53.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400020/",
-  "published": "2026-10-26T14:12:42Z",
+  "published": "2026-10-28T01:54:52Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -468,7 +468,7 @@
   "title": "URL: dl84.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400021/",
-  "published": "2026-10-26T12:02:47Z",
+  "published": "2026-10-27T23:44:57Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -490,7 +490,7 @@
   "title": "URL: cdn54.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400022/",
-  "published": "2026-10-26T08:36:04Z",
+  "published": "2026-10-27T20:18:14Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -512,7 +512,7 @@
   "title": "URL: mirror3.files-store.xyz",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400023/",
-  "published": "2026-10-27T22:25:21Z",
+  "published": "2026-10-29T10:07:31Z",
   "severity": "medium",
   "tags": [
    "Amadey",
@@ -534,7 +534,7 @@
   "title": "URL: get1.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400024/",
-  "published": "2026-10-27T06:47:25Z",
+  "published": "2026-10-28T18:29:35Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -556,7 +556,7 @@
   "title": "URL: cdn59.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400025/",
-  "published": "2026-10-28T11:00:21Z",
+  "published": "2026-10-29T22:42:31Z",
   "severity": "high",
   "tags": [
    "Amadey",
@@ -578,7 +578,7 @@
   "title": "URL: mirror12.drop-zone.icu",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400026/",
-  "published": "2026-10-25T20:03:02Z",
+  "published": "2026-10-27T07:45:12Z",
   "severity": "medium",
   "tags": [
    "Amadey",
@@ -600,7 +600,7 @@
   "title": "URL: get19.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400027/",
-  "published": "2026-10-28T00:51:51Z",
+  "published": "2026-10-29T12:34:01Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -622,7 +622,7 @@
   "title": "URL: dl50.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400028/",
-  "published": "2026-10-27T15:13:04Z",
+  "published": "2026-10-29T02:55:14Z",
   "severity": "high",
   "tags": [
    "Lumma Stealer",
@@ -644,7 +644,7 @@
   "title": "URL: cdn7.drop-zone.icu",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400029/",
-  "published": "2026-10-27T09:15:53Z",
+  "published": "2026-10-28T20:58:03Z",
   "severity": "medium",
   "tags": [
    "Amadey",
@@ -666,7 +666,7 @@
   "title": "URL: get82.example-host.top",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400030/",
-  "published": "2026-10-27T08:07:12Z",
+  "published": "2026-10-28T19:49:22Z",
   "severity": "medium",
   "tags": [
    "Lumma Stealer",
@@ -688,7 +688,7 @@
   "title": "URL: get73.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400031/",
-  "published": "2026-10-27T08:26:49Z",
+  "published": "2026-10-28T20:08:59Z",
   "severity": "high",
   "tags": [
    "Amadey",
@@ -710,7 +710,7 @@
   "title": "URL: mirror46.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400032/",
-  "published": "2026-10-27T18:58:56Z",
+  "published": "2026-10-29T06:41:06Z",
   "severity": "high",
   "tags": [
    "Amadey",
@@ -732,7 +732,7 @@
   "title": "URL: dl72.drop-zone.icu",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400033/",
-  "published": "2026-10-26T13:56:40Z",
+  "published": "2026-10-28T01:38:50Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -754,7 +754,7 @@
   "title": "URL: mirror77.files-store.xyz",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400034/",
-  "published": "2026-10-26T01:26:52Z",
+  "published": "2026-10-27T13:09:02Z",
   "severity": "medium",
   "tags": [
    "Remcos",
@@ -776,7 +776,7 @@
   "title": "URL: mirror40.drop-zone.icu",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400035/",
-  "published": "2026-10-27T06:39:12Z",
+  "published": "2026-10-28T18:21:22Z",
   "severity": "high",
   "tags": [
    "Amadey",
@@ -798,7 +798,7 @@
   "title": "URL: mirror65.files-store.xyz",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400036/",
-  "published": "2026-10-28T10:24:59Z",
+  "published": "2026-10-29T22:07:09Z",
   "severity": "high",
   "tags": [
    "Amadey",
@@ -820,7 +820,7 @@
   "title": "URL: mirror31.files-store.xyz",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400037/",
-  "published": "2026-10-26T06:12:40Z",
+  "published": "2026-10-27T17:54:50Z",
   "severity": "medium",
   "tags": [
    "Remcos",
@@ -842,7 +842,7 @@
   "title": "URL: mirror52.example-host.top",
   "summary": "malware_download exe status online",
   "url": "https://urlhaus.abuse.ch/url/3400038/",
-  "published": "2026-10-28T03:09:57Z",
+  "published": "2026-10-29T14:52:07Z",
   "severity": "high",
   "tags": [
    "Remcos",
@@ -864,7 +864,7 @@
   "title": "URL: dl57.drop-zone.icu",
   "summary": "malware_download exe status offline",
   "url": "https://urlhaus.abuse.ch/url/3400039/",
-  "published": "2026-10-26T14:41:23Z",
+  "published": "2026-10-28T02:23:33Z",
   "severity": "medium",
   "tags": [
    "Lumma Stealer",

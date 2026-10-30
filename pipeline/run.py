@@ -31,7 +31,7 @@ DATA = Path(os.environ.get("CTI_DATA_DIR", ROOT / "data"))
 RECORD_FEEDS = ["kev", "tridentstack", "acsc", "threatfox", "urlhaus", "ransomwarelive", "news"]
 ENRICH_FEEDS = ["epss", "nvd", "attack"]
 RETENTION_DAYS = {"indicator": 14, "news": 30, "incident": 90, "advisory": 180, "vulnerability": 365}
-MAX_RECORDS = 5000
+MAX_RECORDS = 10000
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("pipeline")
